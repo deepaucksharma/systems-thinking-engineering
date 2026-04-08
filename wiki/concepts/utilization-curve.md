@@ -1,0 +1,35 @@
+---
+title: "Utilization Curve"
+type: concept
+tags: [physics, queuing-theory, focus, wip]
+sources: [raw/4.md]
+backlinks: [wiki/concepts/focus.md, wiki/concepts/littles-law.md, wiki/concepts/p1-crisis.md]
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Utilization Curve
+
+## Definition
+
+The Utilization Curve illustrates the physical limits of team throughput under stochastic service times (variable task durations). It explains why pushing utilization toward 100% destroys throughput.
+
+## Diagram 4: Queue Length vs. Utilization
+
+| Utilization | Queue Behavior | Team Experience | Manager Action |
+|---|---|---|---|
+| **50–70%** | Linear | Slack exists | Invest in skill/architecture |
+| **70–80%** | Mild growth | Busy but finishing | Protect improvement time |
+| **80–85%** | Accelerating | Fragile | Enforce WIP cap |
+| **85–90%** | Non-linear explosion | Everything urgent | Pull Protection lever now |
+| **90–95%** | Near-infinite | Panic | Crisis state |
+| **95–99%** | Breakdown | P1 Crisis | Shed load; single goal |
+
+## The 85% Physics Limit
+
+For any system with variable service times—which all software engineering has—the curve of cycle time goes non-linear above 85% utilization. A team at 90% utilization will have exponentially worse cycle times than a team at 80%.
+
+## Related
+- [Little's Law](littles-law.md) — The mathematical foundation of the curve.
+- [Focus (OM2)](focus.md) — The condition governing utilization caps.

@@ -1,0 +1,68 @@
+---
+title: "Discrete-Event Simulation (DES)"
+type: concept
+tags: [simulation, algorithms, operations-research, digital-twin, queuing-theory]
+sources: [raw/3.md]
+backlinks: [wiki/concepts/digital-twin.md, wiki/entities/master-equation.md]
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Discrete-Event Simulation (DES)
+
+## Definition
+
+The framework can be empirically validated and used for quantitative prediction by translating it into a **Discrete-Event Simulation (DES)**. This forms the computational backbone of an organizational [Digital Twin](digital-twin.md).
+
+## Core Components
+
+The simulation models human engineering teams as stochastic processes:
+
+1. **Agents:** 
+   - *Engineers:* Have skill distibutions (e.g., normally distributed around 0.7), task assignments, and context-switch penalties.
+   - *Manager:* Applies lever actions based on diagnosed metrics via the explicit Table 2 routing.
+   - *Product Owner:* Generates tasks into the backlog.
+
+2. **Events:**
+   - *Task arrival:* Parameterized by an arrival rate $\lambda$ (Poisson process).
+   - *Task start:* Constrained by WIP cap.
+   - *Task completion:* Stochastic duration based on skill, coordination overhead, and interrupts.
+   - *Defect escape:* Probabilistic based on Quality condition score.
+   - *Review cycle:* Adds latency based on Feedback Speed.
+
+3. **State Variables:**
+   - Evaluated continuously for math models: $C(t), F(t), S(t), Co(t), Q(t), FS(t)$
+   - Queues: $\text{WIP}(t)$, $\text{Backlog}(t)$, $\text{Debt}(t)$
+
+## Implementation Loop (Example)
+
+```python
+        # Engineers work on tasks
+        for eng in self.engineers:
+            if eng.current_task:
+                # Apply focus penalty (context switching)
+                effective_rate = eng.skill * self.F * (1 - self.interrupt_rate)
+                progress = effective_rate * self.dt
+                eng.current_task.work_remaining -= progress
+                
+                if eng.current_task.work_remaining <= 0:
+                    # Quality gate (probabilistic escape based on Quality score)
+                    if random.random() > self.Q:
+                        self.backlog.append(Bug(priority='high'))
+                        self.debt += eng.current_task.complexity * 0.5 # Exponential debt buildup
+                    else:
+                        self.completed.append(eng.current_task)
+                    eng.current_task = None
+```
+
+## Validation Experiments
+
+A functional DES model of the framework must reproduce known organizational failure modes synthetically:
+- **Test 1:** Set $C = 0.3$ (ambiguous goals). Validation constraint: The model MUST generate high rework rates.
+- **Test 2:** Set $F = 0.1$ ($\text{WIP} \gg \text{cap}$). Validation constraint: the model MUST trigger a cycle time explosion.
+- **Test 3:** Start simulation in [Crisis](p1-crisis.md) state ($\Phi = 0.25$), apply Action P1 playbook programmatically (cut WIP, single goal), and measure the generated time-to-stabilization.
+
+## Related
+- [Digital Twin](digital-twin.md) — Uses continuous data ingestion to update this DES model.
+- [Order Parameter ($\Phi$)](order-parameter.md) — The defining system state variable inside the simulation.

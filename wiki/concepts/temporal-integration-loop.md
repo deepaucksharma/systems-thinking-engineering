@@ -1,0 +1,71 @@
+---
+title: "Temporal Integration Loop"
+type: concept
+tags: [control-loop, integration, process]
+sources: [raw/4.md]
+backlinks: []
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Temporal Integration Loop
+
+## Definition
+
+The Temporal Integration Loop demonstrates how the entire 12-diagram visual architecture connects over time. It transforms a static diagnostic framework into an executable process algorithm.
+
+## Diagram 12: Observe, Diagnose, Act, Measure, Scale
+
+```mermaid
+flowchart TD
+    subgraph OBSERVE_PHASE["OBSERVE — Where Are We?"]
+        D8["Diagram 8: Phase Space"]
+        D7["Diagram 7: State Machine"]
+        D4["Diagram 4: Utilization Curve"]
+    end
+
+    subgraph DIAGNOSE_PHASE["DIAGNOSE — What Is Broken?"]
+        D6["Diagram 6: Decision Tree"]
+        D1["Diagram 1: Equation Identity"]
+        D2["Diagram 2: Causal Loop"]
+        D3["Diagram 3: Stock and Flow"]
+    end
+
+    subgraph ACT_PHASE["ACT — What Do I Do?"]
+        D9["Diagram 9: Lever Access Map"]
+        T2["Table 2: Corrective Move"]
+        T3["Table 3: Playbook Sequence"]
+    end
+
+    subgraph MEASURE_PHASE["MEASURE — Did It Work?"]
+        D5["Diagram 5: Control Loop (Wait 2 Cycles)"]
+        T1["Table 1: Leading/Lagging Indicators"]
+    end
+
+    subgraph SCALE_PHASE["SCALE — Does It Hold?"]
+        D10["Diagram 10: Fractal Scaling"]
+        D11["Diagram 11: Anti-Pattern Check"]
+    end
+
+    OBSERVE_PHASE --> DIAGNOSE_PHASE
+    DIAGNOSE_PHASE --> ACT_PHASE
+    ACT_PHASE --> MEASURE_PHASE
+    
+    MEASURE_PHASE -->|"Leading moved, Lagging improving"| OBSERVE_PHASE
+    MEASURE_PHASE -->|"Leading moved, Lagging stable"| HOLD["Hold Course (System Propagating)"]
+    MEASURE_PHASE -->|"Nothing moved"| REDIAG["Return to Diagnose Phase"]
+    
+    HOLD --> MEASURE_PHASE
+    REDIAG --> DIAGNOSE_PHASE
+
+    ACT_PHASE -.->|"Check before execution"| SCALE_PHASE
+```
+
+## Significance
+
+This loop prevents the "checklist" fallacy. Management is a continuous, closed-loop control system operating over a temporal horizon restricted by the [Nyquist Constraint](nyquist-constraint.md).
+
+## Related
+- [Anti-Patterns](anti-patterns.md) — Checked in the Scale Phase.
+- [Team State Machine](p1-crisis.md) — Verified in the Observe Phase.

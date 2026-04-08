@@ -1,0 +1,51 @@
+---
+title: "Winning Loop"
+type: concept
+tags: [dynamics, reinforcing-loop, causal-loop, improvement]
+sources: [raw/1.md, raw/2.md]
+backlinks: [wiki/entities/master-equation.md, wiki/sources/diagram-set-1.md, wiki/sources/diagram-set-2.md, wiki/concepts/losing-loop.md]
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Winning Loop (R2)
+
+## Definition
+
+A self-reinforcing feedback loop where slack enables investment, which raises capability, which raises throughput, which creates more slack. Formally labeled **R2** (Reinforcing Loop 2).
+
+## Causal Chain
+
+```
+Slack → Investment Time → Skill ↑ + Architecture ↑ → Quality ↑ → Throughput ↑ → Workload ↓ → Slack
+```
+
+## 🟢 Complete Causal Loop Diagram (Diagram 2)
+The Winning Loop (R2) operates in opposition to the [Losing Loop (R1)](losing-loop.md) and is actively managed by the Manager's Balancing Loop (B1). See the full visual on the [Losing Loop](losing-loop.md) page.
+
+## Key Properties
+
+- **Self-reinforcing** but **not self-sustaining.** [Condition Decay](condition-decay.md) erodes gains without active maintenance.
+- **Requires slack to engage.** If the [Losing Loop](losing-loop.md) has consumed all capacity, there is no entry point.
+- **Compounding returns:** Each cycle through the loop raises the baseline — skill, architecture quality, and throughput all accumulate.
+
+## Feeding the Loop
+
+Manager interventions that feed the winning loop (loop-feeding interventions):
+1. **Development** (pairing, coaching) — builds [Skill](skill.md)
+2. **Standards** (raise quality bar) — reduces defect escape rate
+3. **Structure** (reduce dependencies) — improves [Coordination](coordination.md)
+
+## Entry Conditions
+
+The winning loop becomes accessible when:
+- [Focus](focus.md) > 0 (slack exists)
+- The [Losing Loop](losing-loop.md) is at least partially broken
+- The team is at [P3-Functional](p3-functional.md) or above
+
+## Related
+
+- [Losing Loop](losing-loop.md) — the competing dynamic
+- [P4-Thriving](p4-thriving.md) — the state where the winning loop is fully engaged
+- [Condition Decay](condition-decay.md) — why the winning loop needs continuous maintenance

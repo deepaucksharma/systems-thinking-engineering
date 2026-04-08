@@ -1,0 +1,35 @@
+---
+title: "Summary of Diagram Set 3: Extended Framework"
+type: source
+tags: [source, thermodynamics, control-theory, measurement, multi-scale]
+sources: [raw/3.md]
+backlinks: []
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Source: Diagram Set 3 (Extended Framework)
+
+## Overview
+This document elevates the original engineering management systems model to a predictive science by formalizing mathematical foundations, establishing measurement theory, adding political economy, and extending the model to multi-scale systems with computational implementation (discrete-event simulation).
+
+## Key Content Extracted
+
+### Entities
+- [Master Equation](../entities/master-equation.md) (Enriched with Refined Equation with Damping and Dimensional Framework)
+
+### Core Concepts & Dynamics
+- [Order Parameter ($\Phi$)](../concepts/order-parameter.md) — The mathematical definition of state transitions.
+- [Hysteresis](../concepts/hysteresis.md) — The gap between upward and downward transition thresholds.
+- [Self-Organized Criticality](../concepts/self-organized-criticality.md) — Avalanche dynamics leading to sudden collapse.
+- [Resource Allocation Game](../concepts/resource-allocation-game.md) — Political economy and the Principal-Agent problem.
+- [Conway's Law](../concepts/conways-law.md) — Architectural constraint and the Inverse Conway Maneuver.
+- [Multi-Scale Dynamics](../concepts/multi-scale-dynamics.md) — Resonance, anti-resonance, and micro/meso/macro coupling.
+- [Digital Twin](../concepts/digital-twin.md) — Discrete-Event Simulation implementation of the framework.
+- [Boundary Conditions](../concepts/boundary-conditions.md) — Known failure modes of the model (non-stationarity, extreme sizes, hostile actors).
+- [Goodhart's Law](../concepts/goodharts-law.md) — The automation paradox and ethical measurement.
+- [Falsifiability Criteria](../concepts/falsifiability-criteria.md) — Empirical validation protocols and testable hypotheses.
+
+## Path
+`raw/3.md`

@@ -1,0 +1,38 @@
+---
+title: "Rushing Trap"
+type: concept
+tags: [trap, failure-mode, phase-space, technical-debt]
+sources: [raw/1.md, raw/4.md]
+backlinks: [wiki/sources/diagram-set-1.md, wiki/sources/4-visual-architecture.md, wiki/concepts/hero-culture-trap.md]
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Rushing Trap
+
+## Definition
+
+A pathological team state: **disciplined WIP but standards bypassed under pressure.** The team appears fast on cycle time metrics while quality silently degrades.
+
+## Phase Space Trajectory (Diagram 8)
+
+Lower-right quadrant: High [Focus](focus.md), Low [Quality](quality.md).
+
+Mechanism:
+- Teams under deadline pressure move right (focus improves).
+- But drop sharply in quality (standards bypassed).
+- Cycle time metrics look good — improvement appears real.
+- But lagging quality indicators worsen over time.
+- Technical debt accumulates invisibly.
+
+*(See the Phase Space quadrant graph on the [Hero Culture Trap](hero-culture-trap.md) page).*
+
+## Intervention
+
+Pull the **Standards** lever — enforce non-negotiable quality gates. The rushing trap is only broken by refusing to sacrifice quality for speed.
+
+## Related
+
+- [Self-Organized Criticality](self-organized-criticality.md) — the sandpile avalanche often triggered by rushing traps.
+- [Anti-Patterns](anti-patterns.md) — the fallacy of relaxing quality under pressure.

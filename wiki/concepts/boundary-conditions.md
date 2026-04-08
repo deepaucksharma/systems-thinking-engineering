@@ -1,0 +1,30 @@
+---
+title: "Boundary Conditions"
+type: concept
+tags: [limitations, edge-cases, validation]
+sources: [raw/3.md]
+backlinks: [wiki/entities/master-equation.md]
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Boundary Conditions (Model Limitations)
+
+## Definition
+
+No system model is universal. The Engineering Management Control Theory framework has known failure modes when applied outside its boundary conditions.
+
+## Explicit Failures
+
+1. **Non-Stationary Environments (Black Swans)**
+   The model assumes stationarity. Major shocks (acquisitions, pandemics, sudden regulatory shifts) destroy the historical baselines. Measurements decouple from outcomes. Mitigation: Reset baselines.
+2. **Extreme Sizes**
+   Solo developers have no coordination overhead (model reduces to personal productivity). Massive organizations (>200) hit [Conway's Law](conways-law.md) limits, requiring entirely different abstraction layers.
+3. **Non-Knowledge Work**
+   The framework applies only to cognitively complex work with high task variance. It fails when applied to structural manufacturing, call centers, or relationship-based sales.
+4. **Hostile Actors / Perfect Information Assumption**
+   The diagnostic tables assume good faith reporting. In toxic environments, engineers hide technical debt and managers falsify WIP. When agents actively sabotage the system, systems theory fails; adversarial mechanism design is required.
+
+## Related
+- [Goodhart's Law](goodharts-law.md) — Another limitation involving measurement distortion.

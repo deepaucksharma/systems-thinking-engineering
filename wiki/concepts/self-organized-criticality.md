@@ -1,0 +1,36 @@
+---
+title: "Self-Organized Criticality"
+type: concept
+tags: [thermodynamics, failure-mode, collapse, technical-debt]
+sources: [raw/3.md]
+backlinks: [wiki/concepts/p3-functional.md, wiki/concepts/quality.md]
+created: 2026-04-08
+updated: 2026-04-08
+status: active
+---
+
+# Self-Organized Criticality (Avalanches)
+
+## Definition
+
+Systems in [P3 (Functional)](p3-functional.md) can experience **catastrophic collapse** to [P1 (Crisis)](p1-crisis.md) with no intermediate state. This phenomenon is analogous to self-organized criticality in sandpile models.
+
+## Mechanism
+
+- Technical debt accumulates gradually like grains of sand.
+- Each bypassed standard or skipped test has minimal immediate impact.
+- The system appears stable until a critical threshold is crossed.
+- A single additional grain triggers an **avalanche** (cascading failures).
+
+## The Danger of Lagging Indicators
+
+Because the system appears Functional ($\Phi \approx 0.6$) right up to the moment of collapse, **lagging indicators are useless** for predicting avalanches.
+
+## Intervention (Stress Testing)
+To avoid sudden avalanches, managers must:
+- Run deliberate game days (simulated failures).
+- Monitor the debt accumulation rate.
+- Enforce hard caps on technical debt, similar to [WIP limits](focus.md).
+
+## Related
+- [Rushing Trap](rushing-trap.md) — The anti-pattern that builds the sandpile.
