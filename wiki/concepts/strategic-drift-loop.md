@@ -27,6 +27,13 @@ No Experimentation → Strategy Based on Assumptions
 
 Breaking this requires explicit experimentation budget and an outcome-based strategy. It **cannot** be fixed by execution improvement. Executing perfectly in this loop is just highly tuned waste-production.
 
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **Visionary Leverage Exception:** The Strategic Drift loop heavily penalizes low Experimentation Rate ($ER$, a Block L variable), assuming all un-tested strategy trends toward zero value. 
+> 
+> However, in true 0-to-1 paradigm shifts (e.g., iPhone), immediate customer feedback ($CV$) is often negative or confusing because users cannot evaluate non-existent paradigms. If Executive/Founder "Visionary Leverage" is astronomically high, the system must intentionally *sever* the Block L feedback loops to survive the transition dip. In these rare cases, what the model diagnoses as a terminal "Strategic Drift Loop" is actually a necessary incubation period.
+
 ## Related
-- [Value Alignment](../legacy/value-alignment.md)
-- [Learning & Adaptation](../legacy/learning-adaptation.md)
+- [Block V: Value Alignment (Strategic Fit)](10-block-V.md)
+- [Block L: Learning & Adaptation](14-block-L.md)

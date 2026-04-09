@@ -32,29 +32,29 @@ flowchart LR
         EX["Executive\nAd-hoc Requests"]
     end
 
-    subgraph GATE1["🎯 Direction Filter (OM1)"]
+    subgraph GATE1["🎯 Direction Filter (V-Block)"]
         PRI["Priority &\nScope Decision\nOne Goal Rule"]
         DEF2["Explicit Parking Lot\nDeferred or Declined\n(Backpressure Signal)"]
     end
 
     subgraph STOCK["📦 Queue Stock"]
         BL["Committed\nBacklog"]
-        IP["⚠️ Work In Progress\nWIP Cap Enforced\n(Focus — OM2)"]
+        IP["⚠️ Work In Progress\nWIP Cap Enforced\n(Focus — F)"]
         HW["Hidden Work\n(Invisible WIP\nBreaks all caps)"]
     end
 
-    subgraph PROCESS["⚙️ Processing Rate μ (OM3 + OM4)"]
+    subgraph PROCESS["⚙️ Processing Rate μ (Block E)"]
         CAP["Effective Team\nCapacity"]
         BLOCK["Blockers &\nDependency Friction\n(Coordination loss)"]
         HERO["Hero Concentration\n(Skill bottleneck)"]
     end
 
-    subgraph QGATE["✅ Quality Gate (OM5)"]
+    subgraph QGATE["✅ Quality Gate (Q)"]
         REV["Automated Tests\nCode Review\nRelease Gates"]
         DONE["Verified Done\n& Shipped"]
     end
 
-    subgraph REWORK["🔄 Rework Loop — Feedback Speed (OM6)"]
+    subgraph REWORK["🔄 Rework Loop — Feedback Speed (FS)"]
         ESC["Escaped Defects"]
         INC["Incidents &\nUser Pain"]
         LATE["⚠️ Late Detection\n= Expensive Rework"]
@@ -91,8 +91,17 @@ As shown in Diagram 3, three hidden elements destroy throughput:
 
 When utilization exceeds ~85%, queuing theory predicts **non-linear cycle time growth** — the queue explodes disproportionately. This is why the framework emphasizes slack: operating at 100% utilization is a mathematical guarantee of infinite queue growth. See the [Utilization Curve](utilization-curve.md).
 
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **Theoretical Divergence:** Classical queuing theory mathematical models fundamentally fail when applied to human engineering teams without heavy modification.
+
+In classical manufacturing or compute networks, the Processing Rate ($\mu$) is independent of the queue size or utilization (a server processes a packet at a static clock speed regardless of how long the packet waited). 
+
+In the Systems EM framework, **$\mu$ decays as a function of the queue size**. If a team is pushed to 100% utilization, the resulting systemic stress ($Su < 1$) triggers an exponential decay of processing capacity (as defined in the [Transfer Functions](transfer-functions.md)). Human cycles are state-dependent. Therefore, while Little's Law is observationally useful to prove that high WIP equals slow cycle times, it *under-predicts* the severity of the collapse, because it fails to account for the catastrophic burnout of the processing engine itself.
+
 ## Related
 
-- [Focus](../legacy/focus.md) — the condition that controls WIP
-- [Feedback Speed](feedback-speed.md) — governs which rework path (fast vs. slow) is triggered
+- [Block E: Focus (F)](12-block-E.md) — the condition that controls WIP
+- [Feedback Speed](14-block-L.md) — governs which rework path (fast vs. slow) is triggered
 - [Utilization Curve](utilization-curve.md) — The 85% physics limit.

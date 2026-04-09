@@ -33,20 +33,29 @@ The Winning Loop (R2) operates in opposition to the [Losing Loop (R1)](losing-lo
 ## Feeding the Loop
 
 Manager interventions that feed the winning loop (loop-feeding interventions):
-1. **Development** (pairing, coaching) — builds [Skill](../legacy/skill.md)
+1. **Development** (pairing, coaching) — builds [Block E: Skill ($S$)](12-block-E.md)
 2. **Standards** (raise quality bar) — reduces defect escape rate
-3. **Structure** (reduce dependencies) — improves [Coordination](../legacy/coordination.md)
+3. **Structure** (reduce dependencies) — improves [Block E: Coordination ($Co$)](12-block-E.md)
 
 ## Entry Conditions
 
 The winning loop becomes accessible when:
-- [Focus](../legacy/focus.md) > 0 (slack exists)
+- [Block E: Focus ($F$)](12-block-E.md) is positive (Slack exists)
 - The [Losing Loop](losing-loop.md) is at least partially broken
 - The team is at [P3-Functional](p3-functional.md) or above
 
 ## V2 Context
 
-In Canonical V2, the Winning Loop operates completely within the [Execution System](../legacy/execution-system.md) (Block E). To ensure it translates into actual user impact, it must be aligned with a strong [Value Alignment](../legacy/value-alignment.md) block. Executing a perfect Winning loop inside a system with low Strategic Fit ($SF$) is highly efficient waste production.
+## V2 Context
+
+In Canonical V2, the Winning Loop operates completely within the [Block E: Execution System](12-block-E.md). To ensure it translates into actual user impact, it must be aligned with a strong [Block V: Value Alignment](10-block-V.md) block. Executing a perfect Winning loop inside a system with low Strategic Fit ($SF$) is highly efficient waste production.
+
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **Mechanism Design Failure:** The Winning Loop claims that rising throughput eventually creates "Slack." This assumes the organization acts as a closed, rational system.
+> 
+> As mathematically proven in the [Mechanism Design](incentive-mechanism-design.md) tension matrices, if Incentive Alignment ($IA$) evaluates middle-management on "Utilization Output," management will instantly consume any generated Slack by jamming more scope into the pipeline. Therefore, the Winning Loop functionally *cannot exist* without an executive Block A intervention that explicitly protects Slack as a capital investment rather than viewing it as "wasted capacity." Left unprotected, a Winning Loop immediately crashes back into a Losing Loop.
 
 ## Related
 

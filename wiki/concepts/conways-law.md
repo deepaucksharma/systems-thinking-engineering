@@ -3,7 +3,7 @@ title: "Conway's Law"
 type: concept
 tags: [architecture, structure, coordination, scaling]
 sources: [raw/3.md]
-backlinks: [wiki/legacy/coordination.md, wiki/concepts/p5-scaling.md]
+backlinks: [wiki/concepts/coordination.md, wiki/concepts/p5-scaling.md]
 created: 2026-04-08
 updated: 2026-04-08
 status: active
@@ -17,7 +17,7 @@ status: active
 
 ## The Inviolable Constraint
 
-You cannot fix [Coordination (OM4)](../legacy/coordination.md) through management directive alone. The org chart *is* the architecture. Attempts to impose a technical architecture that contradicts the organizational structure will fail.
+You cannot fix [Coordination ($Co$)](12-block-E.md) through management directive alone. The org chart *is* the architecture. Attempts to impose a technical architecture that contradicts the organizational structure will fail.
 
 ## The Inverse Conway Maneuver
 
@@ -36,6 +36,14 @@ $$N_{\text{critical}} = \frac{k \cdot \text{avg\_skill}}{\text{architectural\_co
 
 When $N \to N_{\text{critical}}$, the system will collapse unless you partition teams (reducing $N$ locally) and decouple the architecture.
 
+## Framework Fit and Correctness Evaluation
+
+> [!NOTE]
+> **Theoretical Convergence:** Conway's Law maps flawlessly into the V2.1 architecture. It is the empirical foundation for the Master Equation's primary structural gate: $E_{\text{eff}} = E \cdot A$.
+
+In the framework, you cannot solve a Block A (Org Alignment) constraint by pulling a Block E (Execution) lever. If Cross-Team Architecture ($XT$) is fractured, local team Coordination ($Co$) will asymptotically approach zero regardless of how many Agile ceremonies are applied. The framework explicitly formalizes Conway's Law as a hard multiplier against the Execution block.
+
 ## Related
-- [Coordination](../legacy/coordination.md) — The condition most directly constrained by Conway's Law.
+- [Block E: Coordination ($Co$)](12-block-E.md) — The local condition constrained by global structure.
+- [Block A: Cross-Team ($XT$)](13-block-A.md) — The structural macro-variable representing Conway's Law.
 - [P5: Scaling](p5-scaling.md) — The state where Conway's Law limits are hit.

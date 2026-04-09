@@ -26,6 +26,13 @@ Overload → Burnout Accumulates → Quality ↓ + Learning Stops
 
 Breaking requires genuine load reduction (cutting scope) plus structural slack protection. It **cannot** be fixed by efficiency improvements alone.
 
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **Commoditization Exception:** The Sustainability Drain Loop mathematically guarantees system collapse *only* if the system requires Knowledge Retention ($KR$) to function.
+> 
+> The framework models high-leverage engineering teams. However, for heavily commoditized work (e.g., outsourced QA, rote code-monkey agencies), the organization actually *arbitrages* the Sustainability Drain Loop. They intentionally push $Su \to 0$, burn the resource, and replace them, extracting maximum output before Debt accumulation hits the balance sheet. In those low-complexity domains, Sustainability Drain is a highly profitable, sustainable business model rather than a system failure.
+
 ## Related
-- [People System](../legacy/people-system.md)
-- [Execution System](../legacy/execution-system.md)
+- [Block P: People System (Sustainability)](11-block-P.md)
+- [Block E: Execution System](12-block-E.md)

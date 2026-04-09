@@ -17,11 +17,11 @@ status: active
 
 - **Sources:** 6
 - **Entities:** 1
-- **Active Concepts:** 56
+- **Active Concepts:** 57
 - **Legacy Pages:** 16
 - **Syntheses:** 2
 - **Indexes:** 5
-- **Total pages:** 86
+- **Total pages:** 87
 
 ## Category Indexes
 

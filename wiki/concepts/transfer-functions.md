@@ -11,55 +11,78 @@ status: active
 
 # Transfer Functions (Mathematical Coupling)
 
-While the [Master Equation](02-master-equation.md) establishes that blocks multiply together ($V \cdot P \cdot E \cdot A \cdot L$), this abstraction hides the temporal dynamics—how a defect in Block P bleeds into Block E over time. 
+The [Master Equation](02-master-equation.md) tells us which blocks matter and that they interact multiplicatively. It says much less about *how* changes propagate over time. This page sketches candidate coupling functions that make those time dynamics more explicit.
 
-By modeling the organization as a continuous control system, we formalize exactly how variables explicitly couple together using distinct mathematical **Transfer Functions**.
+These functions should be read as **modeling hypotheses**, not settled laws.
 
-## 1. The Safety-Learning Sigmoid ($P \rightarrow L$)
-*Learning capacity is a non-linear threshold function of Psychological Safety.*
+## Why This Page Exists
 
-The framework states that feedback speed ($FS$) without safety ($PS$) creates data distortion, not learning. This is modeled using a heavily localized sigmoid (logistic) function:
+Two systems can have the same current block scores and still behave very differently over time. The difference often comes from:
+- threshold effects;
+- delayed propagation;
+- accumulated overload;
+- structural amplification of variability.
+
+Transfer-function thinking is one way to model those effects.
+
+## 1. Safety to Learning: Threshold Coupling
+
+Learning often behaves less like a straight line and more like a threshold process. Once safety falls below a certain level, truth-telling and signal quality can collapse quickly.
+
+One candidate form is:
 
 $$L_{\text{eff}}(t) = L_{\text{raw}}(t) \cdot \left[ \frac{1}{1 + e^{-k(PS(t) - PS_{\text{crit}})}} \right]$$
 
-**Parameters:**
-* $PS_{\text{crit}}$: The critical safety threshold. Below this threshold, truth is actively suppressed.
-* $k$: The steepness of the collapse. In high-stakes authoritarian cultures, $k$ is extremely high (the curve looks like a step-function drop).
+This is not important because the logistic function is sacred. It is useful because it captures a practical intuition:
+- above a safety threshold, learning mechanisms work reasonably well;
+- below that threshold, more tools or more feedback infrastructure may have sharply diminishing value.
 
-**Diagnostic Implication:** Linearly increasing $L_{\text{raw}}$ (buying more CI/CD tools to increase feedback speed) will yield zero actual learning ($L_{\text{eff}} \approx 0$) if the organizational state is sitting in the left tail of the sigmoid ($PS(t) < PS_{\text{crit}}$).
+## 2. Sustainability to Execution: Accumulated Strain
 
-## 2. The Sustainability Decay Exponential ($Su \rightarrow E$)
-*Execution degrades fundamentally as the integral of overload.*
+Overload usually acts cumulatively rather than instantaneously. A team can tolerate some strain for a while, then suddenly look much weaker.
 
-Overload (low $Su$) does not merely reduce the output of Block E linearly; it operates as an accumulating debt that exponentially decays the capacity to execute. This couples Block P to Block E across time.
+One candidate form is:
 
 $$E(t) = E_0 \cdot \exp\left(-\lambda \int_0^t (1 - Su(\tau)) d\tau\right)$$
 
-**Parameters:**
-* $(1 - Su(\tau))$: The *strain rate*—how fast the team is burning above sustainable limits at time $\tau$.
-* $\lambda$: The system's intrinsic resilience. Strong infrastructure (high Quality, low tech debt) means lower $\lambda$, allowing the team to survive periods of $Su < 1$ longer before collapsing.
-* The integral $\int$: Indicates that *duration* is as fatal as *severity*. A 10% overload sustained for 6 months causes massive systemic decay; a 100% overload sustained for 3 days causes very little.
+The point of this expression is not exact parameter fitting. The point is that duration matters as much as intensity. Mild overload sustained for months can be more destructive than a brief spike.
 
-**Diagnostic Implication:** Teams cannot "sprint" indefinitely. If $\int (1 - Su) dt$ accumulates sufficiently, the derivative of $E(t)$ turns sharply negative, producing spontaneous [P1 - Crisis](p1-crisis.md) phase shifts.
+## 3. Incentives to Delivered Value: Optimization Drift
 
-## 3. The Strategic Gravity Well ($A \rightarrow V$)
-*Incentive misalignment operates as localized Nash Equilibria, overriding Strategic Fit.*
+If incentives reward visible local output rather than durable value, the system tends to drift toward what is rewarded.
 
-Block A sets incentives ($IA$). If $IA$ does not correlate perfectly with Customer Value ($CV$), local optimizations trap agents. This is modeled using an optimization landscape where agents seek the path of least resistance (gradient descent).
+This can be expressed informally as an optimization landscape:
 
-$$ \frac{dV_{\text{delivered}}}{dt} = - \nabla (\text{Incentive\_Field}(\text{Effort})) $$
+$$\frac{dV_{\text{delivered}}}{dt} \propto - \nabla(\text{Incentive Field})$$
 
-If the Incentive Field mathematically rewards "Lines of Code" or "Features Shipped" rather than "Customer Value", the gradient points away from $V$. Over time:
+The practical meaning is straightforward:
+- strategy documents do not dominate incentives;
+- promotion logic and reward structure often shape actual behavior more strongly than stated priorities.
 
-$$ V_{\text{eff}}(t) \rightarrow \text{Nash\_Equilibrium}(IA) $$
+## 4. Structure to Variability: Variance Amplification
 
-**Diagnostic Implication:** Abstract strategy documents ($SF$) cannot overcome misaligned promotion criteria ($IA$). The org will structurally drift into the minimum-energy state defined by its incentive architecture.
+Cross-team handoffs and dependency hops often do more than slow work down. They also increase uncertainty and tail risk.
 
-## 4. The Variability Inflation Factor ($A \rightarrow E$)
-*Cross-team structural coordination introduces super-additive variance.*
+One candidate expression is:
 
-Tail-risk variability ($g_{\text{tail}}(\text{Var})$) in Execution is severely penalized by Cross-Team Architecture ($XT$) routing problems. From queuing theory, the variance of a task traversing $N$ poorly aligned handoffs compounds:
+$$\text{Var}_{\text{system}} \approx \text{Var}_{\text{local}} \cdot (1 + \omega \cdot XT_{\text{hops}}^2)$$
 
-$$ \text{Var}_{\text{system}} \approx \text{Var}_{\text{local}} \cdot (1 + \omega \cdot (XT_{\text{hops}})^2) $$
+Again, the exact formula is less important than the mechanism it encodes:
+- local process improvement may have bounded effect if the delivery path itself is structurally fragmented;
+- architectural and organizational simplification can reduce not just mean delay but volatility as well.
 
-**Diagnostic Implication:** Fixing local agile processes ($\text{Var}_{\text{local}}$) has marginal impact on overall system reliability if delivery requires heavily fragmented multi-squad topologies ($XT_{\text{hops}}$ > 2). You must flatten the architecture to tame the $N^2$ penalization.
+## How to Use These Functions
+
+Use this page to:
+- generate simulation assumptions;
+- reason about lagged side effects;
+- explain why local interventions sometimes wash out or backfire.
+
+Do not use it to claim the framework has already identified universal numeric constants for organizational behavior.
+
+## Related
+
+- [02 - Master Equation](02-master-equation.md) - high-level interacting block model
+- [06 - Time Constants](06-time-constants.md) - observation and intervention lag
+- [Discrete-Event Simulation (DES)](discrete-event-simulation.md) - alternative computational modeling approach
+- [Digital Twin](digital-twin.md) - operational modeling layer

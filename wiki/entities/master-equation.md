@@ -61,4 +61,4 @@ This page serves as a bridge between the historical formulation and the current 
 - [12 - Block E (Execution System)](../concepts/12-block-E.md) - execution-side constraints
 - [13 - Block A (Org Alignment)](../concepts/13-block-A.md) - structural constraints
 - [14 - Block L (Learning & Adaptation)](../concepts/14-block-L.md) - adaptation constraints
-- [Zero-Override Rule](../concepts/zero-override-rule.md) - operational consequence of multiplicative structure
+- [Zero-Override Rule](../legacy/zero-override-rule.md) - historical operational consequence of multiplicative structure

@@ -81,7 +81,14 @@ Manager interventions (Balancing Loop B1) that break the causal chain:
 
 ## V2 Context & Overrides
 
-In Canonical V2, the Losing Loop operates strictly inside the [Execution System](../legacy/execution-system.md) (Block E). However, resolving it often requires cross-layer interventions. If the Losing Loop is driven by top-down incentive pressure, it forms an [Incentive Death Spiral](incentive-death-spiral.md). If it drags down human capability permanently, it forms a [Sustainability Drain Loop](sustainability-drain-loop.md).
+In Canonical V2, the Losing Loop operates strictly inside the [Block E: Execution System](12-block-E.md). However, resolving it often requires cross-layer interventions. If the Losing Loop is driven by top-down incentive pressure, it forms an [Incentive Death Spiral](incentive-death-spiral.md). If it drags down human capability permanently, it forms a [Sustainability Drain Loop](sustainability-drain-loop.md).
+
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **The Stable Equilibrium Assumption:** The framework classifies the Losing Loop as a "failure mode" that must be fixed. However, Game Theory proves that a low-grade losing loop is often a perfectly stable Nash Equilibrium for middle management.
+>
+> If an organization is deeply leveraged and must hit quarterly targets to survive, running the system hot (zero slack, high technical debt) effectively acts as a payday loan. Management intentionally sacrifices long-term Block L (Learning) to guarantee short-term Block E output. In these contexts, what the framework diagnoses as a "System Failure" is actually a mathematically rational survival response to the surrounding Mechanism Design. Breaking the loop is impossible until the financial/survival context changes.
 
 ## Related
 

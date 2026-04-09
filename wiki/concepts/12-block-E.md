@@ -32,7 +32,7 @@ Tail risk is diagnosed alongside Block E because it shows up vividly in delivery
 
 ## The Five Conditions
 
-### Clarity (C) - OM1
+### Clarity ($C$)
 
 **Definition:** Shared understanding of goals, priorities, and success criteria across the team.
 
@@ -52,7 +52,7 @@ Tail risk is diagnosed alongside Block E because it shows up vividly in delivery
 
 **Intervention:** Define one goal per sprint in 25 words or fewer. Force-rank priorities. Kill ambiguous work before it starts.
 
-### Focus (F) - OM2
+### Focus ($F$)
 
 **Definition:** Protected attention, controlled work in progress, and enough slack to absorb variation.
 
@@ -73,7 +73,7 @@ Tail risk is diagnosed alongside Block E because it shows up vividly in delivery
 
 **Intervention:** Set explicit WIP caps, reduce batch size, make interrupts visible, and clarify who can authorize new work.
 
-### Skill (S) - OM3
+### Skill ($S$)
 
 **Definition:** Capability to solve the actual problems the team faces, not generic prestige or pedigree.
 
@@ -94,7 +94,7 @@ Tail risk is diagnosed alongside Block E because it shows up vividly in delivery
 
 **Intervention:** Identify the missing capability precisely, reduce extraneous load, pair on real work, and check composition before defaulting to hiring.
 
-### Coordination (Co) - OM4
+### Coordination ($Co$)
 
 **Definition:** Work flows without collisions, duplication, ownership gaps, or chronic handoff failure.
 
@@ -115,7 +115,7 @@ Tail risk is diagnosed alongside Block E because it shows up vividly in delivery
 
 **Intervention:** Map ownership before process. If the same coordination breakdown recurs, suspect structure before blaming habits.
 
-### Quality (Q) - OM5
+### Quality ($Q$)
 
 **Definition:** Output meets standards without excessive rework, and defects are found early enough to be affordable.
 
@@ -170,6 +170,13 @@ You do not need the exact formula to use the idea well. The operational point is
 - The cause of tail risk may sit in execution, org coupling, intake volatility, or weak learning loops.
 
 A team with acceptable averages but a fat tail is less reliable than its dashboard suggests.
+
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **Domain Failure (Cynefin 'Complex' States):** The Execution Block mathematically models software delivery as a complicated manufacturing process. It assumes that if constraints are managed (high $F$, high $Co$), output scales linearly.
+>
+> In deeply experimental R&D or 0-to-1 product discovery, the system operates in the Cynefin "Complex" domain. In this state, **Clarity ($C$) is impossible to establish upfront**. Forcing $C=1$ through heavy up-front requirements actually destroys Value ($V$) because it prevents discovery. The framework struggles to model the difference between "bad lack of clarity" (confusion) and "good lack of clarity" (exploration). You must relax $E$-block tracking and rely almost exclusively on Block L (Learning) until the domain stabilizes into the "Complicated" state.
 
 ## Evolutionary Lineage
 *Supersedes earlier V2 definition: [Execution System](../legacy/execution-system.md)*

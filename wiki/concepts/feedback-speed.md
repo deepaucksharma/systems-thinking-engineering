@@ -5,7 +5,7 @@ tags: [condition, feedback, om6, learning-rate, cycle-time, telemetry, v2-framew
 sources: [raw/1.md, raw/2.md, raw/3.md, raw/4.md, raw/5.md]
 backlinks: [wiki/_indexes/concepts.md, wiki/concepts/littles-law.md, wiki/legacy/learning-adaptation.md, wiki/concepts/fear-amplification-loop.md, wiki/legacy/master-equation.md, wiki/legacy/fix-order.md, wiki/legacy/nyquist-constraint.md, wiki/concepts/winning-loop.md, wiki/concepts/losing-loop.md]
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-04-09
 status: active
 ---
 
@@ -13,56 +13,78 @@ status: active
 
 ## Definition
 
-Now conceptually housed as the primary term of the **Learning & Adaptation (Block L)** (formerly the multiplier in V1's master execution equation). Measures the time from action to consequential signal (technical and product). It amplifies the impact of all other conditions.
+Feedback Speed began as OM6 in the earlier execution model and later became part of the broader Learning block. It refers to the time between action and consequential signal:
 
-## Measurement Proxy
+- how fast defects are discovered;
+- how fast customer impact becomes visible;
+- how fast the system can tell whether a change helped or harmed.
 
-$$FS(t) = \frac{\text{baseline\_cycle}}{\text{current\_cycle}}$$
+Fast feedback is useful because it shortens learning loops. It is not automatically good in all circumstances, because a frightened or overloaded system can turn fast feedback into faster gaming.
 
-Where baseline cycle is the reference review cycle length. Lead time to defect detection, time to user signal, CI/CD cycle time are all markers.
+## Useful Measurement Proxies
 
-## Leading Indicators
+One simple framing is:
 
-- Time-to-detect (how quickly defects surface after introduction)
-- Review turnaround time (PR latency)
-- Deploy frequency
-- Retrospective cadence
+$$FS(t) = \frac{\text{baseline cycle}}{\text{current cycle}}$$
 
-## Lagging Indicators
+But the exact formula matters less than the operational question: how long does it take for the system to tell you something meaningful?
 
-- Recurring incidents (same class of failure repeating)
-- Slow improvement velocity 
-- Morale erosion
+Useful proxies include:
+- time to defect detection;
+- time to user signal;
+- CI/CD latency;
+- review turnaround time;
+- time from incident to diagnosis.
 
-## If Near Zero
+## Why It Matters
 
-Discovering bugs in production months after introduction. User behavior unknown until launch. 
-The [Nyquist Constraint](../legacy/nyquist-constraint.md) is violated: the manager is acting on aliased, stale data. 
+When feedback is slow:
+- rework becomes more expensive;
+- uncertainty compounds before correction happens;
+- managers steer with stale information;
+- teams repeat the same mistakes longer than necessary.
 
-## V2 Context & Diagnostic Gating
+When feedback is fast and trustworthy:
+- mistakes are caught earlier;
+- smaller experiments become possible;
+- the cost of learning drops.
 
-**Feedback Speed ($FS$) is gated tightly by Psychological Safety ($PS$):**
-Fast feedback loops without Safety do not accelerate learning; they accelerate distortion. 
-- Retrospectives identify symptoms, not causes (honesty is unsafe).
-- Fast metrics are gamed.
-- Postmortems become blame rituals.
+## Diagnostic Context
 
-Because of the [Measurement Reliability Theorem](v2-theorems.md), the diagnostic flow demands a hard gate: **If Feedback Speed is low, the diagnostic MUST check: "Is $PS$ low?"** If yes, attempting to improve $FS$ (via tight CI/CD or PR metrics) will trigger the [Fear Amplification Loop](fear-amplification-loop.md), poisoning the telemetry entirely.
+Feedback Speed is now best understood as part of Learning and Adaptation rather than as a standalone master multiplier.
 
-## Lever: Feedback Speed
+It should be interpreted together with:
+- [06 - Time Constants](06-time-constants.md)
+- [14 - Block L (Learning & Adaptation)](14-block-L.md)
+- [11 - Block P (People System)](11-block-P.md)
 
-- **Shrink batch size** — smaller deployments = faster feedback loops
-- **Instrument telemetry** — automated detection of errors 
-- **Customer feedback tight loops** — shorten the signal from user pain to fix
-- **Improve CI/CD latency** 
+The most important caution is this:
 
-## Rework Loop Speed
+**fast feedback without psychological safety can accelerate distortion rather than learning.**
 
-In the Stock-and-Flow model ([Little's Law](littles-law.md)), fast detection (Feedback Speed high) means rework enters cheaply; slow detection means rework is catastrophically expensive.
+If safety is low, teams may optimize for the visibility of the signal rather than for the reality behind it. That is why Feedback Speed should never be read independently from the measurement-reliability and safety discussions elsewhere in the wiki.
+
+## If Feedback Speed Is Near Zero
+
+Typical signs:
+- bugs discovered months after introduction;
+- user behavior only understood long after release;
+- review or deployment loops so slow that iteration is effectively blocked;
+- retrospectives that arrive after context and energy are already gone.
+
+At that point, the system is often steering with stale data.
+
+## Practical Levers
+
+- reduce batch size;
+- improve instrumentation;
+- shorten CI/CD latency;
+- reduce waiting and handoff time in the path to signal;
+- tighten the loop between user pain and corrective action.
 
 ## Related
 
-- [Learning & Adaptation](../legacy/learning-adaptation.md) — Feedback Speed belongs to Block L
-- [People System](../legacy/people-system.md) — Psychological Safety gates feedback
-- [Nyquist Constraint](../legacy/nyquist-constraint.md) — how fast feedback must arrive 
-- [Little's Law](littles-law.md) — the two-speed rework loop
+- [14 - Block L (Learning & Adaptation)](14-block-L.md) - current home of feedback inside the broader learning model
+- [06 - Time Constants](06-time-constants.md) - observation windows and intervention timing
+- [11 - Block P (People System)](11-block-P.md) - safety and sustainability shape whether feedback is usable
+- [Little's Law](littles-law.md) - rework becomes more expensive when detection is slow

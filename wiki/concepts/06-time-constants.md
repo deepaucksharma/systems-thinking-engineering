@@ -99,5 +99,11 @@ Before implementing any significant intervention:
 Organizations measure during the dip, conclude the intervention failed, revert to baseline, and develop learned helplessness about change ("we tried that once"). This pattern is induced by:
 - Not predicting the J-curve
 - Not communicating it to stakeholders
-- Measuring too early
 - Not defining the abort signal in advance
+
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **Market Velocity Mismatch:** The Nyquist Constraint mathematically assumes that the organization's maximum safe observation frequency is faster than the market's mutation frequency.
+>
+> In hypersonically volatile environments (e.g., pre-Product-Market-Fit startups or highly disruptive AI sectors), the external market state may completely change before the 1-2 quarter Strategic Fit ($SF$) Nyquist window concludes. In this unique scenario, upholding the Nyquist limit internally guarantees failure because the organization becomes mathematically decoupled from market reality. The framework structurally struggles to model pure Chaos-domain speed without breaking its own rules for structural stability.

@@ -34,7 +34,7 @@ Output(t) = theta * V(t) * P(t) * E(t) * A(t) * L(t) * exp(-lambda * Debt) * g(V
 ```text
 Step 0: Check for no-win conditions (V, PS, Su, IA, XT near zero)
 Step 1: Verify People System integrity (Safety first; then Sustainability)
-Step 2: Diagnose Execution (OM1 -> OM5) with structural awareness
+Step 2: Diagnose Execution ($E = C \cdot F \cdot S \cdot Co \cdot Q$) with structural awareness
 Step 3: If E problems persist, inspect Org Alignment (A)
 Step 4: Improve Learning only after V/P/E/A are minimally stable
 ```
@@ -48,6 +48,13 @@ Step 4: Improve Learning only after V/P/E/A are minimally stable
 ## The Most Important Insight
 
 **The measurement system is itself a variable.** When Psychological Safety (`PS`) is low, many metrics become less trustworthy because people mask, comply, or selectively report. Fix the measurement environment before over-trusting the dashboard.
+
+## Framework Fit and Correctness Evaluation
+
+> [!CAUTION]
+> **Boundary Conditions (Where this model breaks down):** 
+> * **Asynchronous Open-Source Communities:** This framework tightly models corporate hierarchies, where identity persistence, defined capital allocation ($RA$), and hierarchical decision rights ($DR$) bind the system together. It fails mathematically in purely transient networks or open-source configurations where Psychological Safety ($PS$) is largely irrelevant due to true anonymity and high-velocity exit rights.
+> * **Zero-Marginal-Cost Manufacturing:** The framework models *knowledge work* bottlenecks ($Su$ decay). It does not accurately model purely physical flow systems where machine speed, not human sustainability, dictates processing limits.
 
 ## Related Core Concepts
 
