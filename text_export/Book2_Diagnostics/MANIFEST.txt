@@ -1,0 +1,28 @@
+Book2_Diagnostics - File Manifest
+============================================================
+
+Total files: 21
+
+Files:
+------------------------------------------------------------
+  1. concepts__20-diagnostic-sequence.txt
+  2. concepts__21-zero-override.txt
+  3. concepts__41-metrics-by-block.txt
+  4. concepts__51-anti-patterns.txt
+  5. concepts__cynical-equilibrium.txt
+  6. concepts__ethical-measurement.txt
+  7. concepts__goodharts-law.txt
+  8. concepts__incentive-mechanism-design.txt
+  9. concepts__lever-access-rule.txt
+ 10. concepts__practitioners-checklist.txt
+ 11. concepts__resource-allocation-game.txt
+ 12. concepts__structure-vs-development-rule.txt
+ 13. concepts__temporal-integration-loop.txt
+ 14. entities__table-2-diagnostics.txt
+ 15. legacy__anti-patterns.txt
+ 16. legacy__fix-order.txt
+ 17. legacy__metrics-framework.txt
+ 18. legacy__zero-override-rule.txt
+ 19. log__2026-04.txt
+ 20. syntheses__historical-evolution.txt
+ 21. syntheses__review-2026-04-09-findings.txt

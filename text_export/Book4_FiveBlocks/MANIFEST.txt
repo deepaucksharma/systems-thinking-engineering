@@ -1,0 +1,29 @@
+Book4_FiveBlocks - File Manifest
+============================================================
+
+Total files: 22
+
+Files:
+------------------------------------------------------------
+  1. concepts__10-block-V.txt
+  2. concepts__11-block-P.txt
+  3. concepts__12-block-E.txt
+  4. concepts__13-block-A.txt
+  5. concepts__14-block-L.txt
+  6. concepts__conways-law.txt
+  7. concepts__feedback-speed.txt
+  8. concepts__resource-allocation-game.txt
+  9. legacy__clarity.txt
+ 10. legacy__coordination.txt
+ 11. legacy__execution-system.txt
+ 12. legacy__focus.txt
+ 13. legacy__learning-adaptation.txt
+ 14. legacy__org-alignment.txt
+ 15. legacy__people-system.txt
+ 16. legacy__quality.txt
+ 17. legacy__skill.txt
+ 18. legacy__value-alignment.txt
+ 19. sources__3-extended-framework.txt
+ 20. sources__4-visual-architecture.txt
+ 21. sources__diagram-set-1.txt
+ 22. sources__diagram-set-2.txt

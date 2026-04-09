@@ -1,0 +1,20 @@
+Book5_Scaling - File Manifest
+============================================================
+
+Total files: 13
+
+Files:
+------------------------------------------------------------
+  1. _indexes__concepts.txt
+  2. _indexes__entities.txt
+  3. _indexes__sources.txt
+  4. _indexes__syntheses.txt
+  5. concepts__cross-domain-extensions.txt
+  6. concepts__fractal-scaling.txt
+  7. concepts__multi-scale-dynamics.txt
+  8. concepts__open-research-questions.txt
+  9. log__2026-04.txt
+ 10. sources__3-extended-framework.txt
+ 11. sources__4-visual-architecture.txt
+ 12. sources__diagram-set-1.txt
+ 13. sources__diagram-set-2.txt

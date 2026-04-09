@@ -4,7 +4,12 @@ This file governs how the LLM maintains, expands, and queries this wiki. All ope
 
 ## Domain
 
-Engineering Management Control Theory — a systems-thinking framework for managing software engineering teams, built on a multiplicative output equation, causal loop dynamics, diagnostic decision trees, and team state machines.
+**Canonical V2.1 Engineering Management Control Theory** — a sociotechnical systems-thinking framework for managing software engineering teams. Built on:
+- A Multiplicative 5-Block Master Equation ($V \cdot P \cdot E \cdot A \cdot L$)
+- Causal loop dynamics (e.g., Fear Amplification, Sustainability Drain)
+- Diagnostic decision trees resolving Macro-Gates ($V, P, A$) before Micro-Execution ($E$)
+- Queuing physics constraints (Batch Size, Tail Risk / Obesity Index)
+- Cognitive Load decomposition and Cynefin framework domain awareness
 
 ---
 
@@ -29,6 +34,18 @@ SystemsEM/
 ├── tools/                  # CLI helper scripts for search, lint, metadata queries
 ├── WIKI_SCHEMA.md          # This file
 └── .kiro/                  # IDE configuration (do not modify)
+
+---
+
+## The Definitive Editorial Architecture
+
+When drafting new pages in `wiki/concepts/` or `wiki/entities/`, map them conceptually into the following 6-part Canonical taxonomy (ensuring progressive disclosure through tags and links):
+1. **Theory**: Fundamental rules, master equations, causal dynamics (Losing/Winning loops), state machines, time constants.
+2. **Blocks**: Deep-dives into the $V$, $P$, $E$, $A$, and $L$ blocks and their sub-variables.
+3. **Diagnosis**: Symptom maps, zero-override protocols, domain calibration (Cynefin), and cognitive load decomposition.
+4. **Playbook**: Intervention rules, Lever-Access constraints, J-curve anticipation, and mixed-state handling.
+5. **Measurement**: Telemetry design, leading vs lagging indicators, SPACE frameworks, and managing distorted data.
+6. **Reference**: Formal theorems, executive anti-patterns, glossary, and open falsifiability conditions.
 ```
 
 ---
@@ -141,7 +158,8 @@ Triggered when the user asks for a health check, or periodically by the LLM.
 - **Stale pages**: Pages not updated in >30 days with newer sources available.
 - **Missing pages**: Concepts or entities mentioned in links but with no corresponding page (broken links / red links).
 - **Contradictions**: Claims on one page that conflict with claims on another.
-- **Frontmatter compliance**: Pages missing required frontmatter fields.
+- **V2.1 Compliance Drift**: Identify logic falling back to legacy V1 linear boundaries. (e.g., Execution analysis that fails to disambiguate Macro-Gates ($V, P, A$), ignores multi-dimensional Vectors, or violates Nyquist time constraints).
+- **Frontmatter compliance**: Pages missing required frontmatter fields, or lacking context labels like `v2-framework`.
 - **Index drift**: Pages that exist but are not listed in their category index.
 - **Tag inconsistency**: Same concept tagged differently across pages.
 - **Suggested expansions**: Stubs that could be expanded with available source material.
