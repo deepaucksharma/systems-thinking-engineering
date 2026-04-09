@@ -1,4 +1,4 @@
----
+﻿---
 title: "Focus"
 type: concept
 tags: [condition, protection, om2, wip, slack, v2-framework]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/12-block-E.md]
 # Focus (OM2 - Legacy)
 
 > [!WARNING]
-> This is a fragmented legacy metric page. For the complete V2.1 unified Execution layer, see **[12 — Block E (Execution System)]()**, which specifically addresses the queuing physics updates to Batch Size and Utilization limits.
+> This is a fragmented legacy metric page. For the complete V2.1 unified Execution layer, see **[12 — Block E (Execution System)](../concepts/12-block-E.md)**, which specifically addresses the queuing physics updates to Batch Size and Utilization limits.
 
 ## Definition
 
@@ -34,7 +34,7 @@ The second condition in the Execution System (`E`) block of the [Master Equation
 
 ## If Near Zero
 
-Everyone doing everything simultaneously. WIP piles up. The team context-switches constantly. This triggers the [Losing Loop]().
+Everyone doing everything simultaneously. WIP piles up. The team context-switches constantly. This triggers the [Losing Loop](../concepts/losing-loop.md).
 
 ## Lever: Protection
 
@@ -50,11 +50,11 @@ If the org rewards responsiveness to urgent tasks over completing strategic work
 
 ## Connection to Slack
 
-Focus > 0 creates **slack** — the surplus capacity that enables the [Winning Loop](). Without focus, there is no slack, and the winning loop cannot engage.
+Focus > 0 creates **slack** — the surplus capacity that enables the [Winning Loop](../concepts/winning-loop.md). Without focus, there is no slack, and the winning loop cannot engage.
 
 ## Related
 
-- [Little's Law]() — why WIP control matters
-- [Losing Loop]() — overloaded focus drives this loop
-- [Winning Loop]() — focus surplus enables this loop
+- [Little's Law](../concepts/littles-law.md) — why WIP control matters
+- [Losing Loop](../concepts/losing-loop.md) — overloaded focus drives this loop
+- [Winning Loop](../concepts/winning-loop.md) — focus surplus enables this loop
 - [Execution System](../legacy/execution-system.md) — Focus belongs to Block E

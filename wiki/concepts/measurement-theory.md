@@ -48,7 +48,7 @@ Different organizations may need different indicators, different weights, or eve
 
 To be decision-useful, these metrics should pass at least three statistical tests:
 
-1. **Principal Component Analysis (PCA):** If the framework is capturing a real underlying condition, the indicators should exhibit meaningful covariance. PCA should usually yield a first principal component that explains a substantial share of variance.
+1. **Principal Component Analysis (PCA):** If the framework is capturing a real underlying condition, the indicators should exhibit meaningful covariance, and exploratory PCA may show a dominant component. Factor loadings, rotations, and cutoffs (for example “percent variance explained”) are **context-specific**; this wiki does **not** prescribe a universal training recipe, loading pattern, or false-positive rate. Treat PCA as a **sanity check and descriptive tool**, not an engine that automatically assigns root cause across blocks.
 2. **Test-Retest Reliability:** Measuring the same team twice within a short interval, assuming no major disruption, should yield broadly similar condition values.
 3. **Convergent Validity:** Leading indicator scores should correlate with the downstream outcomes they are supposed to predict or explain.
 

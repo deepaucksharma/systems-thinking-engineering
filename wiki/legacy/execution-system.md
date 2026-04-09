@@ -1,4 +1,4 @@
----
+﻿---
 title: "Execution System"
 type: concept
 tags: [v2-framework, system-block, block-e, flow, mechanics]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/12-block-E.md]
 # Execution System (Block E - Legacy V2)
 
 > [!WARNING]
-> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[12 — Block E (Execution System)]()**.
+> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[12 — Block E (Execution System)](../concepts/12-block-E.md)**.
 
 **Core question:** *Can work actually flow through this team from intention to delivered value?*
 

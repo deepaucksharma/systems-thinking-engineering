@@ -1,4 +1,4 @@
----
+﻿---
 title: "Learning and Adaptation"
 type: concept
 tags: [v2-framework, system-block, block-l, learning, loops]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/14-block-L.md]
 # Learning & Adaptation (Block L - Legacy V2)
 
 > [!WARNING]
-> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[14 — Block L (Learning & Adaptation)]()**.
+> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[14 — Block L (Learning & Adaptation)](../concepts/14-block-L.md)**.
 
 **Core question:** *Does the system improve over time, or does it repeat the same patterns indefinitely?*
 
@@ -22,13 +22,13 @@ The Learning block captures the organization's ability to mutate based on enviro
 In the [Master Equation](../legacy/master-equation.md), the formulation is:
 $$L(t) = FS(t) \cdot \prod_{m \in \{LP, KR, CA\}} \left(w_m \cdot l_m(t) + (1-w_m)\right)$$
 
-*Note: In the V1 framework, [Feedback Speed]() (FS) was a direct multiplier on Execution. It is conceptually relocated here as the primary term of $L$.*
+*Note: In the V1 framework, [Feedback Speed](../concepts/feedback-speed.md) (FS) was a direct multiplier on Execution. It is conceptually relocated here as the primary term of $L$.*
 
 ## Sub-variables & Measurement
 
 | Sub-variable | Definition | Zero state | Observable signal |
 |-------------|------------|------------|------------------|
-| **[Feedback Speed]() (FS)** | Time from action to consequential signal. | Bugs discovered months later. | CI/CD cycle time; time to user signal. |
+| **[Feedback Speed](../concepts/feedback-speed.md) (FS)** | Time from action to consequential signal. | Bugs discovered months later. | CI/CD cycle time; time to user signal. |
 | **Learning Practices (LP)** | Retros, postmortems, experiments work. | Postmortems blame individuals. | Action item completion rate. |
 | **Knowledge Retention (KR)** | Memory survives personnel changes. | Repeated mistakes; bus factor = 1. | Onboarding time trend. |
 | **Change Absorption (CA)** | Rate of change vs. system's integration capacity. | Constant thrash; NYQUIST violations. | Simultaneous initiatives count. |
@@ -47,4 +47,4 @@ The Change Absorption ($CA$) limit asserts you **must not intervene faster than 
 
 - **Experimentation Rate ($ER$) is now explicit.** V2.1 treats safe-to-fail experimentation as a first-class learning variable instead of an implied practice.
 - **Learning is tied more tightly to diagnostic sequencing.** The canonical flow delays Learning optimization until the system is minimally stable.
-- **Time-constant handling is more specific.** V2.1 connects Learning directly to the detailed Nyquist/J-curve treatment in [06 — Time Constants]().
+- **Time-constant handling is more specific.** V2.1 connects Learning directly to the detailed Nyquist/J-curve treatment in [06 — Time Constants](../concepts/06-time-constants.md).

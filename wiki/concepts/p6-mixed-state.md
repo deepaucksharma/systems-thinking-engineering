@@ -35,6 +35,10 @@ A genuinely distinct team configuration where **different subsystems are in diff
 
 Evaluating the overall Order Parameter ($\Phi$) by averaging metrics will lie. The manager must partition the metrics by lane/block constraint.
 
+## V2.1 operator note
+
+Treat each **block** as its own lane: use [41 - Metrics by Block](41-metrics-by-block.md) per block, run the [20 - Diagnostic Sequence](20-diagnostic-sequence.md) with partitioning (team, service, or product line) explicit, and use the [Master Equation](02-master-equation.md) gates when interpreting why a “green” block coexists with a “red” one. Mixed state is normal; blended scores are not.
+
 ## Related
 
 - [Order Parameter (Φ)](order-parameter.md)

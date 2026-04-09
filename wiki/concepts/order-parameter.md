@@ -5,7 +5,7 @@ tags: [thermodynamics, state-machine, measurement, physics, v2-framework]
 sources: [raw/3.md, raw/5.md]
 backlinks: [wiki/concepts/hysteresis.md, wiki/legacy/master-equation.md, wiki/concepts/p1-crisis.md, wiki/concepts/v2-extended-states.md]
 created: 2026-04-08
-updated: 2026-04-09
+updated: 2026-04-10
 status: active
 ---
 
@@ -13,13 +13,27 @@ status: active
 
 ## Definition
 
-The order parameter `Phi` is the framework's way of talking about overall system state. It is useful as a **state-summary device**, not as a claim that complex organizations can be reduced perfectly to one number.
+The order parameter `Phi` is the framework's way of talking about overall system state. It is useful as a state-summary device, not as a claim that complex organizations can be reduced perfectly to one number.
 
 In the earlier execution-only framing, `Phi` was treated more like a composite score over execution conditions. In the broader V2 framing, it becomes multi-dimensional:
 
 $$\Phi(t) = [\Phi_V, \Phi_P, \Phi_E, \Phi_A, \Phi_L]$$
 
-The key idea is not the notation. The key idea is that the *shape* of the system matters as much as the average score. A team with strong execution and collapsing people health is not "middling." It is unstable in a very specific way.
+The key idea is not the notation. The key idea is that the shape of the system matters as much as the average score. A team with strong execution and collapsing people health is not middling. It is unstable in a very specific way.
+
+## Epistemic Status
+
+`Phi` should be treated as a descriptive convenience, not a discovered physical state variable in the strict sense used in statistical mechanics.
+
+What makes it useful:
+- it discourages single-metric thinking;
+- it highlights mismatch states;
+- it supports state-based reasoning better than raw narrative alone.
+
+What makes it limited:
+- the sub-scores depend on modeling and normalization choices;
+- different teams may be incomparable even if their scores look similar;
+- a tidy state vector can hide contested measurement assumptions.
 
 ## How State Is Interpreted
 
@@ -58,6 +72,14 @@ See [V2 Extended States](v2-extended-states.md) for the named legacy mismatch pa
 See [P6 - Mixed State](p6-mixed-state.md).
 
 The practical rule is simple: do not average away the weakest block. A system with `Phi_P = 0.2` and `Phi_E = 0.9` is not safely in the middle. It is a high-output system sitting on a human failure mode.
+
+## Relation to the Broader Model
+
+`Phi` does not prove the Master Equation, and the Master Equation does not require `Phi` to be real in a strict mathematical sense. The two constructs are related but serve different purposes:
+- the Master Equation is a causal framing device;
+- `Phi` is a state-summary and pattern-recognition device.
+
+It is fine for one to remain useful even if the other turns out to be a weaker abstraction than currently believed.
 
 ## Related
 

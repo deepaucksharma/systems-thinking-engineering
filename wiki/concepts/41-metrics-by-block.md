@@ -51,7 +51,7 @@ This table defines the formal signals for diagnosing the health of the 5 canonic
 | **Coordination (Co)** | Ownership is explicit and blocker aging is low | Handoff failures; cross-team collisions |
 | **Quality (Q)** | Test coverage, PR review depth | Escaped defects; tech debt growth |
 | **Batch Size (BS)** | P90 item size < 5 days | Cycle time spikes at high utilization |
-| **Tail Risk (TR)** | P95/P99 cycle time diverges from mean | Obesity Index indicates fat-tail behavior |
+| **Tail Risk (TR)** | P95/P99 cycle time diverges from mean | Obesity Index indicates fat-tail behavior; feeds **system-level** \(g_{\text{tail}}\) in the [Master Equation](02-master-equation.md), not only Block E |
 
 ## Org Alignment (Block A)
 *Does the org structure permit execution?*
@@ -83,7 +83,7 @@ This table defines the formal signals for diagnosing the health of the 5 canonic
 - **Partition by domain and lane where necessary.** Mixed states and heavy-tailed delivery make rolled-up averages misleading.
 - **Treat measurement reliability as a prerequisite, not a footnote.** If $PS$ is low, downgrade confidence in all quantitative telemetry.
 
-> **IMPORTANT:** Refer to the [Measurement Reliability Theorem](02-master-equation.md). If Psychological Safety ($PS$) is low, all quantitative execution metrics are suspect. A system without trust cannot produce honest telemetry.
+> **IMPORTANT:** See Gate 1 in the [02 - Master Equation](02-master-equation.md). If Psychological Safety ($PS$) is low, all quantitative execution metrics are suspect. A system without trust cannot produce honest telemetry.
 
 ## Historical Comparison
 

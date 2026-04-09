@@ -21,6 +21,19 @@ The sequence below is not sacred, but it encodes a useful bias:
 - do not demand team discipline when structure is doing the damage;
 - do not add learning loops to a system that is too strained to absorb change.
 
+### Causal gates vs. this sequence
+
+The [Master Equation](02-master-equation.md) expresses **dependencies** among blocks (for example: usable learning is gated by safety; realized execution is gated by org alignment; strategic value in uncertain domains is gated by learning). That is **causal structure**.
+
+This page’s **step order** is tuned for **operator safety and measurement validity**:
+
+1. **Step 0** still asks whether direction and value are coherent—without that, everything else is theater.
+2. **People before dashboards** (Step 1) reflects the measurement-reliability problem: you cannot “diagnose V or E from data” if \(PS\) is destroying telemetry.
+3. **Execution before deep org** (Steps 2–3) reflects how symptoms present: teams feel Block E pain first; Block A is often second-order until local fixes relapse.
+4. **Learning late** (Step 4) reflects **change absorption**: more learning machinery is harmful when sustainability is broken.
+
+When you already trust telemetry and are doing **root-cause reasoning**, run the **gate checklist in dependency order** from the master equation (safety → learning → value; structure → execution) *in addition* to this walkthrough so you do not confuse “what we check first operationally” with “what constrains what mathematically.”
+
 ## Decision Flow
 
 ### Step 0: Check for no-win conditions

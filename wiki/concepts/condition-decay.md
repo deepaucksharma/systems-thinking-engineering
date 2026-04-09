@@ -13,7 +13,7 @@ status: active
 
 ## Definition
 
-All conditions in the [Master Equation](../legacy/master-equation.md) **always decay** without active maintenance. This is labeled Principle 7 in the framework.
+All conditions named in the [02 — Master Equation](02-master-equation.md) (see also the [entity stub](../entities/master-equation.md) and [historical summary](../legacy/master-equation.md)) **always decay** without active maintenance. This is labeled Principle 7 in the framework.
 
 ## Implication
 
@@ -21,10 +21,14 @@ The [Winning Loop](winning-loop.md) is not self-sustaining. Even when a team rea
 
 ## What Decays
 
+Execution-facing examples (easy to see in telemetry):
+
 - **Slack** — gets filled with new commitments
 - **Skill** — atrophies without practice, erodes with turnover
 - **Coordination** — degrades as team composition changes or scope shifts
 - **Quality** — standards erode under pressure ("just this once")
+
+The same principle applies across **all five blocks**: strategy coherence and value focus (V), safety and sustainability (P), clarity-throughput mechanics (E), incentives and topology (A), and learning rituals plus absorption (L). Decay is the default trajectory for any unmaintained factor in the master product.
 
 ## Operational Consequence
 

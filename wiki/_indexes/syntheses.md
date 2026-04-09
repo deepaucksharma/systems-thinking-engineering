@@ -13,4 +13,5 @@ status: active
 
 Cross-cutting analyses, comparisons, and filed query results.
 
-*No syntheses yet. Syntheses are created when query answers are substantial enough to file back into the wiki.*
+- [Historical Evolution Matrix](../syntheses/historical-evolution.md) — V1 / V2 / V2.1 lineage map
+- [Wiki Content Review — Findings Register](../syntheses/review-2026-04-09-findings.md) — quality remediation log and link-check conventions

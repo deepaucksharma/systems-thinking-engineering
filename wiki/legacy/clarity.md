@@ -1,4 +1,4 @@
----
+﻿---
 title: "Clarity"
 type: concept
 tags: [condition, direction, om1, v2-framework]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/12-block-E.md]
 # Clarity (OM1 - Legacy)
 
 > [!WARNING]
-> This is a fragmented legacy metric page. For the complete V2.1 unified Execution layer (including queuing physics logic and macro-gate bounds), see **[12 — Block E (Execution System)]()**.
+> This is a fragmented legacy metric page. For the complete V2.1 unified Execution layer (including queuing physics logic and macro-gate bounds), see **[12 — Block E (Execution System)](../concepts/12-block-E.md)**.
 
 ## Definition
 
@@ -44,12 +44,12 @@ The team builds wrong things. All effort is wasted. [Zero-Override Rule](../lega
 
 ## V2 Context & Strategic Gating
 
-Before concluding a Clarity failure is strictly an Execution problem, verify that [Value Alignment (Block V)](../legacy/value-alignment.md) is not failing explicitly through **Strategic Fit ($SF$)**. Many persistent Clarity failures are actually symptoms of the [Strategic Drift Loop]().
+Before concluding a Clarity failure is strictly an Execution problem, verify that [Value Alignment (Block V)](../legacy/value-alignment.md) is not failing explicitly through **Strategic Fit ($SF$)**. Many persistent Clarity failures are actually symptoms of the [Strategic Drift Loop](../concepts/strategic-drift-loop.md).
 
 - **Clarity ($E_C$)** asks: "Does the local team know what they're trying to do?"
 - **Strategic Fit ($V_{SF}$)** asks: "Is what they're trying to do actually coherent and worth doing?"
 
-You can have perfect Execution-Clarity around an incoherent objective. Pulling the Direction lever when the root cause is $V \approx 0$ is a failure of [Structure-vs-Development macro-disambiguation](). Validate strategy before rewriting the team's local charter.
+You can have perfect Execution-Clarity around an incoherent objective. Pulling the Direction lever when the root cause is $V \approx 0$ is a failure of [Structure-vs-Development macro-disambiguation](../concepts/structure-vs-development-rule.md). Validate strategy before rewriting the team's local charter.
 
 ## Related
 

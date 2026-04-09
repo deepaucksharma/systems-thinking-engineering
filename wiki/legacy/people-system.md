@@ -1,4 +1,4 @@
----
+﻿---
 title: "People System"
 type: concept
 tags: [v2-framework, system-block, block-p, culture, psychology]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/11-block-P.md]
 # People System (Block P - Legacy V2)
 
 > [!WARNING]
-> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[11 — Block P (People System)]()**.
+> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[11 — Block P (People System)](../concepts/11-block-P.md)**.
 
 **Core question:** *Can the humans in this system tell the truth, sustain performance, and actually want to do the work?*
 

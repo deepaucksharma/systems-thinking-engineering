@@ -1,3 +1,5 @@
+# Rewrites legacy paths inside wiki/concepts only. For repo-wide validation (including legacy empty links),
+# use tools/check-wiki-links.ps1.
 $files = Get-ChildItem -Path "wiki/concepts" -Filter "*.md"
 $replacements = @{
     "../legacy/value-alignment.md" = "10-block-V.md"

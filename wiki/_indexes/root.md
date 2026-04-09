@@ -16,12 +16,12 @@ status: active
 ## Statistics
 
 - **Sources:** 6
-- **Entities:** 1
-- **Active Concepts:** 57
-- **Legacy Pages:** 16
+- **Entities:** 2
+- **Concepts:** 57
+- **Legacy pages:** 16
 - **Syntheses:** 2
 - **Indexes:** 5
-- **Total pages:** 87
+- **Total content pages (excl. log):** 88
 
 ## Category Indexes
 
@@ -43,6 +43,7 @@ status: active
 
 ## Core Starting Points
 
+- [Concepts Index — canonical reading order](concepts.md) - spine for navigating V2.1 end-to-end
 - [00 - Model Identity](../concepts/00-model-identity.md) - high-level entry point
 - [02 - Master Equation](../concepts/02-master-equation.md) - conceptual model of interacting constraints
 - [20 - Diagnostic Sequence](../concepts/20-diagnostic-sequence.md) - operator-facing diagnostic flow
@@ -66,3 +67,4 @@ status: active
 - [Structure-vs-Development Rule](../concepts/structure-vs-development-rule.md)
 - [Lever-Access Rule](../concepts/lever-access-rule.md)
 - [06 - Time Constants](../concepts/06-time-constants.md)
+

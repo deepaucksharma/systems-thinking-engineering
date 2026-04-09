@@ -1,4 +1,4 @@
----
+﻿---
 title: "Metrics Framework"
 type: concept
 tags: [metrics, leading-indicators, lagging-indicators, measurement, telemetry, v2-framework]
@@ -13,13 +13,13 @@ superseded_by: [wiki/concepts/41-metrics-by-block.md]
 # Metrics Framework (Legacy)
 
 > [!WARNING]
-> This framework has been explicitly replaced by the Canonical V2.1 Measurement architecture (incorporating the SPACE frame and Tail-Risk metrics). See **[41 — Metrics by Block]()**.
+> This framework has been explicitly replaced by the Canonical V2.1 Measurement architecture (incorporating the SPACE frame and Tail-Risk metrics). See **[41 — Metrics by Block](../concepts/41-metrics-by-block.md)**.
 
 ## Definition
 
 The V2 framework maps **leading** and **lagging** indicators across all five causal blocks ($V$, $P$, $E$, $A$, $L$). Leading indicators predict future state; lagging indicators confirm past state. 
 
-*Crucial Systemic Rule:* A system cannot be managed by observing lagging indicators alone, as the [Feedback Speed]() delay will cause heavy [Nyquist Constraint](../legacy/nyquist-constraint.md) violations, steering the team into oscillation.
+*Crucial Systemic Rule:* A system cannot be managed by observing lagging indicators alone, as the [Feedback Speed](../concepts/feedback-speed.md) delay will cause heavy [Nyquist Constraint](../legacy/nyquist-constraint.md) violations, steering the team into oscillation.
 
 ## Metrics by Block
 
@@ -56,7 +56,7 @@ The V2 framework maps **leading** and **lagging** indicators across all five cau
 ### Learning & Adaptation (Block L)
 | Sub-variable / Concept | Leading Indicators | Lagging Indicators |
 |---|---|---|
-| **[Feedback Speed]() (FS)** | Time to detect, review turnaround, deploy frequency | Recurring incidents, untested long-running branches |
+| **[Feedback Speed](../concepts/feedback-speed.md) (FS)** | Time to detect, review turnaround, deploy frequency | Recurring incidents, untested long-running branches |
 | **Learning Practices (LP)** | Action item completion rate post-incident | Same incident occurs repeatedly |
 | **Change Absorption (CA)** | Number of simultaneous top-down changes | System thrash, fatigue, failure to adopt tooling |
 
@@ -69,11 +69,11 @@ The V2 framework maps **leading** and **lagging** indicators across all five cau
 
 ## Multi-Dimensional Limits & Mixed States
 
-In [P6-Mixed State](), averaging metrics across lanes or blocks is technically invalid. Averaging an excellent Execution metric with a fatal People metric ($\Phi_E = 0.9, \Phi_P = 0.2$) yields a false signal. Partition metrics strictly by domain and block constraint.
+In [P6-Mixed State](../concepts/p6-mixed-state.md), averaging metrics across lanes or blocks is technically invalid. Averaging an excellent Execution metric with a fatal People metric ($\Phi_E = 0.9, \Phi_P = 0.2$) yields a false signal. Partition metrics strictly by domain and block constraint.
 
 ## Related
 
 - [Nyquist Constraint](../legacy/nyquist-constraint.md) — timing rules for interpreting metrics
-- [P6-Mixed State]() — when averages are dangerous
-- [Measurement Theory]() — mathematical rules for latent variables
+- [P6-Mixed State](../concepts/p6-mixed-state.md) — when averages are dangerous
+- [Measurement Theory](../concepts/measurement-theory.md) — mathematical rules for latent variables
 - [Table 2 Diagnostics](../entities/table-2-diagnostics.md) — acting on the metrics

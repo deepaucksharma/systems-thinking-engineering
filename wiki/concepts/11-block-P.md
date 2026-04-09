@@ -20,14 +20,16 @@ historical_lineage: [wiki/legacy/people-system.md]
 
 The People System (Block P) represents the human capacity layer. It is arguably the most under-weighted block in practice, yet mathematically it governs two absolute system limits: The reliability of all telemetry, and the decay rate of all other blocks.
 
-$$P(t) \approx Su \cdot PS \cdot M \cdot F_t \cdot Cu \cdot (1 - EL) \cdot GC$$
+$$P(t) \approx Su \cdot PS \cdot M \cdot FT \cdot Cu \cdot (1 - EL) \cdot GC$$
+
+*(Canonical form and gates: [02 — Master Equation](02-master-equation.md).)*
 
 ## Core Variables
 
 ### 1. Psychological Safety ($PS$)
 **Definition:** Truth-telling capacity; freedom to surface bad news and dissent without retribution.
 **Zero State:** The team knows the project is failing but reports green to executives. All metrics become political lies.
-**Why it matters:** Fast feedback loops ($L_{eff} \approx L \cdot PS$) without safety do not accelerate learning; they accelerate distortion.
+**Why it matters:** Fast feedback loops without safety do not accelerate learning; they accelerate distortion. For how **safety couples to learning** without double-counting \(PS\) in a scalar collapse, see Gate 1 in [02 — Master Equation](02-master-equation.md).
 **Time Constant:** Days to destroy, months to rebuild.
 
 ### 2. Sustainability / Burnout ($Su$)
@@ -38,7 +40,7 @@ $$P(t) \approx Su \cdot PS \cdot M \cdot F_t \cdot Cu \cdot (1 - EL) \cdot GC$$
 ### 3. Motivation & Autonomy ($M$)
 **Definition:** Based on Self-Determination Theory (Autonomy, Competence, Relatedness). Operates via intrinsic drive rather than controlled motivation.
 
-### 4. Fairness & Trust ($F_t$)
+### 4. Fairness & Trust ($FT$)
 **Definition:** Perceived justice in decisions, rewards, and promotions. Lacking this, intrinsic motivation converts into transactional extraction.
 
 ### 5. Lived Culture ($Cu$)

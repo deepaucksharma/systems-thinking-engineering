@@ -1,64 +1,23 @@
 ---
 title: "Master Equation"
 type: entity
-tags: [equation, foundation, legacy]
+tags: [equation, foundation, entity-index]
 sources: []
 backlinks: [wiki/_indexes/entities.md, wiki/concepts/00-model-identity.md]
 created: 2026-04-08
 updated: 2026-04-09
-status: stale
-historical_lineage: [wiki/concepts/02-master-equation.md]
+status: active
+historical_lineage: [wiki/legacy/master-equation.md, wiki/concepts/02-master-equation.md]
 ---
 
-# Master Equation (Legacy V1/V2 Form)
+# Master Equation (entity)
 
-> This page is retained for historical comparison. For the most detailed current version of the model in this wiki, use **[02 - Master Equation](../concepts/02-master-equation.md)**.
+This **entity** names the multiplicative engineering-output model used across the wiki. It is not a fourth copy of the math—the split is intentional:
 
-## Legacy V1/V2 Master Equation
+- **Canonical detail** (block variables, gates, debt, variability): [02 - Master Equation](../concepts/02-master-equation.md)
+- **Executive summary** (blocks, diagnostic order, same equation in prose): [00 - Model Identity](../concepts/00-model-identity.md)
+- **Historical line** (V1 execution-only core, V2 shorthand, why the model widened): [Master Equation (legacy)](../legacy/master-equation.md)
 
-The original formulation focused exclusively on execution:
+Use the legacy page when tracing source ingests or OM1–OM6 vocabulary; use `02` for operational reference.
 
-$$\text{OUTPUT} = (\text{Clarity} \times \text{Focus} \times \text{Skill} \times \text{Coordination} \times \text{Quality}) \times \text{Feedback Speed}$$
-
-This captured a common mental model where delivery throughput depends on six operating conditions, each rated from 0 to 1. The multiplicative structure means a zero in any condition collapses the entire output, regardless of strength elsewhere.
-
-## How This Relates to V2.1
-
-The V2.1 master equation retains this legacy execution core as Block E, but expands the model to include:
-
-- **Value Alignment (V)**: Ensures we're building the right thing
-- **People System (P)**: Enables truth-telling and sustainability
-- **Org Alignment (A)**: Permits structural fixes
-- **Learning & Adaptation (L)**: Drives improvement
-
-The legacy equation becomes a component of the full model:  
-$\text{Output}(t) = \theta \cdot V(t) \cdot P(t) \cdot [\text{Legacy Execution Core}] \cdot A(t) \cdot L(t) \cdot e^{-\lambda \cdot \text{Debt}(t)} \cdot g_{\text{tail}}(\text{Var}(t))$
-
-## Key Variables in Legacy Form
-
-| Variable | Name | Definition |
-|----------|------|------------|
-| Clarity (OM1) | Shared understanding of goals and success criteria |
-| Focus (OM2) | Protected attention and work-in-progress limits |
-| Skill (OM3) | Capability to solve actual problems |
-| Coordination (OM4) | Work moves without collisions or duplication |
-| Quality (OM5) | Output meets standards without excessive rework |
-| Feedback Speed (OM6) | Time from action to consequential signal |
-
-## Evolutionary Notes
-
-- **V1**: Execution-only model (6 conditions)
-- **V2**: Added People and Learning as explicit blocks
-- **V2.1**: Full sociotechnical model with 5 blocks, debt, and variability
-
-This page serves as a bridge between the historical formulation and the current V2.1 canonical version.
-
-## Cross-References
-
-- [02 - Master Equation](../concepts/02-master-equation.md) - fuller current formulation
-- [10 - Block V (Value Alignment)](../concepts/10-block-V.md) - value-side constraints
-- [11 - Block P (People System)](../concepts/11-block-P.md) - human-system constraints
-- [12 - Block E (Execution System)](../concepts/12-block-E.md) - execution-side constraints
-- [13 - Block A (Org Alignment)](../concepts/13-block-A.md) - structural constraints
-- [14 - Block L (Learning & Adaptation)](../concepts/14-block-L.md) - adaptation constraints
-- [Zero-Override Rule](../legacy/zero-override-rule.md) - historical operational consequence of multiplicative structure
+**Factor consistency:** Block **P** in `02` includes **GC** (Germane Capacity) alongside \((1-EL)\), matching [11 — Block P](../concepts/11-block-P.md). If an older ingest shows \(P\) without \(GC\), treat it as abbreviated prose, not a competing definition.

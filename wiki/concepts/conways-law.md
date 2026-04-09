@@ -3,7 +3,7 @@ title: "Conway's Law"
 type: concept
 tags: [architecture, structure, coordination, scaling]
 sources: [raw/3.md]
-backlinks: [wiki/concepts/coordination.md, wiki/concepts/p5-scaling.md]
+backlinks: [wiki/legacy/coordination.md, wiki/concepts/p5-scaling.md]
 created: 2026-04-08
 updated: 2026-04-08
 status: active

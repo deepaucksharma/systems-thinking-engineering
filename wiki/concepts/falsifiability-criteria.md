@@ -34,5 +34,6 @@ Validating these claims requires a **Minimum Viable Dataset**:
 - Predictive Validation requires a proven $R^2 > 0.6$ showing $\Phi(t)$ correlates with $\text{Output}(t+1)$.
 
 ## Related
+- [02 — Master Equation](02-master-equation.md) — Defines the blocks and multiplicative structure assumed by H1 and validation designs.
 - [Utilization Curve](utilization-curve.md) — Provides the math for H2.
 - [Hysteresis](hysteresis.md) — Provides the math for H5.

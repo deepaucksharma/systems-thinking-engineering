@@ -13,6 +13,18 @@ status: active
 
 Principles, conditions, rules, dynamics, team states, and failure modes.
 
+## Canonical reading order (V2.1 hierarchy)
+
+Use this spine when navigating end-to-end; branch into blocks and tools only after the spine makes sense.
+
+1. [00 — Model Identity](../concepts/00-model-identity.md) — five blocks in one screen.
+2. [02 — Master Equation](../concepts/02-master-equation.md) — definitions, debt/variability, **gates** (what constrains what).
+3. Block pages [V](../concepts/10-block-V.md) · [P](../concepts/11-block-P.md) · [E](../concepts/12-block-E.md) · [A](../concepts/13-block-A.md) · [L](../concepts/14-block-L.md).
+4. Operator sequence: [20 — Diagnostic Sequence](../concepts/20-diagnostic-sequence.md), [21 — Zero-Override](../concepts/21-zero-override.md), [41 — Metrics by Block](../concepts/41-metrics-by-block.md).
+5. **[Legacy](../legacy/) pages** — comparison and OM1–OM6 vocabulary only; they do not override `00`, `02`, or the numbered block pages.
+
+Entity index entry for the equation: [Master Equation (entity)](../entities/master-equation.md).
+
 ## Core Framework
 
 - [00 - Model Identity](../concepts/00-model-identity.md) - entry point and high-level block overview | tags: `summary`, `framework`
@@ -32,7 +44,7 @@ Principles, conditions, rules, dynamics, team states, and failure modes.
 - [13 - Block A (Org Alignment)](../concepts/13-block-A.md) - structural and incentive constraints | tags: `block-a`
 - [14 - Block L (Learning & Adaptation)](../concepts/14-block-L.md) - feedback, adaptation, and organizational learning | tags: `block-l`
 
-## Legacy V2 Comparison Pages
+## Legacy V2 block summaries (reference only)
 
 - [Value Alignment](../legacy/value-alignment.md) - earlier V2 summary retained for comparison | tags: `v2-framework`, `block-v`, `stale`
 - [People System](../legacy/people-system.md) - earlier V2 summary retained for comparison | tags: `v2-framework`, `block-p`, `stale`
@@ -47,7 +59,7 @@ Principles, conditions, rules, dynamics, team states, and failure modes.
 - [Skill](../legacy/skill.md) - legacy OM3 page retained for comparison | tags: `condition`, `om3`, `stale`
 - [Coordination](../legacy/coordination.md) - legacy OM4 page retained for comparison | tags: `condition`, `om4`, `stale`
 - [Quality](../legacy/quality.md) - legacy OM5 page retained for comparison | tags: `condition`, `om5`, `stale`
-- [Feedback Speed](../concepts/feedback-speed.md) - legacy OM6 page; now discussed inside Learning | tags: `condition`, `om6`, `v2-framework`
+- [Feedback Speed](../concepts/feedback-speed.md) - OM6 vocabulary; in V2.1 the same signal is `$FS$` inside Block L (see [14 - Block L](../concepts/14-block-L.md)) | tags: `condition`, `om6`, `v2-framework`
 
 ## Theory and Computation
 

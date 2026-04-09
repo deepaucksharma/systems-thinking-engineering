@@ -1,4 +1,4 @@
----
+﻿---
 title: "Coordination"
 type: concept
 tags: [condition, structure, om4, dependencies, ownership, v2-framework]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/12-block-E.md]
 # Coordination (OM4 - Legacy)
 
 > [!WARNING]
-> This is a fragmented legacy metric page. For the complete V2.1 unified Execution layer and the updated Team Topologies heuristics, see **[12 — Block E (Execution System)]()** and **[13 — Block A (Org Alignment)]()**.
+> This is a fragmented legacy metric page. For the complete V2.1 unified Execution layer and the updated Team Topologies heuristics, see **[12 — Block E (Execution System)](../concepts/12-block-E.md)** and **[13 — Block A (Org Alignment)](../concepts/13-block-A.md)**.
 
 ## Definition
 
@@ -49,6 +49,6 @@ When experiencing persistent Coordination failures that cross team boundaries, e
 ## Related
 
 - [Skill](../legacy/skill.md) — the parallel condition
-- [Structure-vs-Development Rule]() — fix coordination first when ambiguous
-- [P5-Scaling]() — scaling stresses coordination most
+- [Structure-vs-Development Rule](../concepts/structure-vs-development-rule.md) — fix coordination first when ambiguous
+- [P5-Scaling](../concepts/p5-scaling.md) — scaling stresses coordination most
 - [Execution System](../legacy/execution-system.md) — Coordination belongs to Block E

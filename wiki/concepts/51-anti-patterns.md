@@ -15,7 +15,7 @@ Organizations fail in predictable ways when trying to optimize output without re
 
 ## 1. Manager Oscillation (Nyquist Violation)
 **The Error:** An executive makes a major change to Block A (like a re-org or strategy shift) and evaluates the result 2 weeks later. Because they see a drop in performance, they immediately intervene again.
-**The Reality:** The [J-Curve](06-time-constants.md) guarantees a temporary dip. Because Block A has a time constant of months/years, a 2-week measurement is totally aliased. The manager becomes the primary source of instability in the system.
+**The Reality:** The [J-Curve](06-time-constants.md) usually implies a temporary dip. Because Block A has a time constant of months/years, a 2-week measurement is totally aliased. The manager becomes the primary source of instability in the system.
 
 ## 2. The Incentive Death Spiral
 **The Error:** Pulling the "Standards/Quality" lever on a team that is actively burning out, while simultaneously rewarding executives for shipping fast.
@@ -23,7 +23,7 @@ Organizations fail in predictable ways when trying to optimize output without re
 
 ## 3. Fear Amplification via Fast Feedback
 **The Error:** Installing sophisticated DORA metrics, PR cycle-time tracking, and automated CI/CD dashboards in an environment with low Psychological Safety ($PS \approx 0$).
-**The Reality:** The [Measurement Reliability Theorem](02-master-equation.md) states that fast feedback loops without safety do not accelerate learning; they accelerate distortion. Engineers will optimize for the metric (gaming batch sizes, hiding failures) rather than the outcome.
+**The Reality:** The framework's measurement-reliability gate ([02 - Master Equation](02-master-equation.md), Gate 1) treats fast feedback without psychological safety as distortion-accelerating, not learning-accelerating. Engineers will optimize for the metric (gaming batch sizes, hiding failures) rather than the outcome.
 
 ## 4. Unbounded Utilization
 **The Error:** Running the engineering team at 100% capacity to ensure "no one has free time", assuming this maximizes ROI.

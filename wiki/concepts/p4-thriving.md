@@ -40,7 +40,7 @@ Monthly
 
 In Canonical V2, P4 describes an Execution state where $0.7 \leq \Phi_E < 0.85$. It operates like a ferromagnetic state with compound growth.
 
-To genuinely exist in P4, the V2 Gating Theorems mandate that **Value ($V$)** and **People ($P$)** constraints must also be extremely high. If $\Phi_E$ reaches 0.8 but $P$ begins to erode due to a [Sustainability Drain Loop](sustainability-drain-loop.md), the system will cross over into a "Feature Factory" / "Sweatshop" [V2 Extended State](v2-extended-states.md) — highly efficient execution fueled strictly by human burnout, which will ultimately snap back to P1.
+To genuinely exist in P4, the V2 gating propositions imply that **Value ($V$)** and **People ($P$)** constraints must also be extremely high. If $\Phi_E$ reaches 0.8 but $P$ begins to erode due to a [Sustainability Drain Loop](sustainability-drain-loop.md), the system will cross over into a "Feature Factory" / "Sweatshop" [V2 Extended State](v2-extended-states.md) — highly efficient execution fueled strictly by human burnout, which will ultimately snap back to P1.
 
 ## Phase Space Trajectory (Diagram 8)
 P4 sits in the upper-right quadrant of the Phase Space Diagram. The primary risk from P4 is moving inward toward the center due to scaling stress, or drifting toward the [Hero Culture Trap](hero-culture-trap.md) through complacency.

@@ -15,6 +15,8 @@ status: active
 
 Every block operates at a different natural frequency. Intervening faster than a block's natural frequency — or measuring results before the feedback has propagated — makes the manager the source of instability.
 
+> **Epistemic status:** The numeric bands in the table below are **order-of-magnitude heuristics** for planning and observation windows—useful for avoiding self-defeating cadence. They are **not** lit reviewed universal constants. Replace them with your own baselines when you have longitudinal data for a given org and domain.
+
 **Nyquist Constraint:** Do not re-intervene until you have observed at least 2 full feedback cycles for that block.
 
 ## Time Constants by Block and Sub-Variable

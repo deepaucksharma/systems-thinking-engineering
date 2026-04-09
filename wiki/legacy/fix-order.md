@@ -1,4 +1,4 @@
----
+﻿---
 title: "Fix-Order"
 type: concept
 tags: [diagnostics, hierarchy, fix-order, decision-tree, v2-framework]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/20-diagnostic-sequence.md]
 # Fix-Order (Legacy)
 
 > [!WARNING]
-> This logic tree has been formally replaced by the V2.1 rules. For the Canonical diagnostic flow, refer to **[20 — Diagnostic Sequence]()**.
+> This logic tree has been formally replaced by the V2.1 rules. For the Canonical diagnostic flow, refer to **[20 — Diagnostic Sequence](../concepts/20-diagnostic-sequence.md)**.
 
 ## Definition
 
@@ -34,12 +34,12 @@ Once the macro blocks are stable, apply the classical internal Execution sequenc
 
 1. **[Clarity](../legacy/clarity.md)** — Check Direction first. Can everyone restate the local goal?
 2. **[Focus](../legacy/focus.md)** — Check Protection. Is WIP within cap? Are interruptions controlled?
-3. **[Skill](../legacy/skill.md) / [Coordination](../legacy/coordination.md)** — Check Development and Structure. Apply [Structure-vs-Development Rule]() if ambiguous.
+3. **[Skill](../legacy/skill.md) / [Coordination](../legacy/coordination.md)** — Check Development and Structure. Apply [Structure-vs-Development Rule](../concepts/structure-vs-development-rule.md) if ambiguous.
 4. **[Quality](../legacy/quality.md)** — Check Standards. Are they holding under pressure?
 
 ## The Learning Layer (Block L)
 
-- **[Feedback Speed]()** — Is the time-to-detect signal shrinking? Optimize Learning after the system is stable enough to benefit from faster feedback.
+- **[Feedback Speed](../concepts/feedback-speed.md)** — Is the time-to-detect signal shrinking? Optimize Learning after the system is stable enough to benefit from faster feedback.
 
 ## Override
 
@@ -49,4 +49,4 @@ The [Zero-Override Rule](../legacy/zero-override-rule.md) supersedes this hierar
 
 - [Table 2](../entities/table-2-diagnostics.md) — the diagnostic reference implementing this hierarchy
 - [Zero-Override Rule](../legacy/zero-override-rule.md) — overrides this hierarchy
-- [Gating Theorems]() — the mathematical rationale for why environment checks precede local optimization
+- [Gating Theorems](../concepts/v2-theorems.md) — the mathematical rationale for why environment checks precede local optimization

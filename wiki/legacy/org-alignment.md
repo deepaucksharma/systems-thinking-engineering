@@ -1,4 +1,4 @@
----
+﻿---
 title: "Org Alignment"
 type: concept
 tags: [v2-framework, system-block, block-a, org-design, incentives]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/13-block-A.md]
 # Org Alignment (Block A - Legacy V2)
 
 > [!WARNING]
-> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[13 — Block A (Org Alignment)]()**.
+> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[13 — Block A (Org Alignment)](../concepts/13-block-A.md)**.
 
 **Core question:** *Does the organizational system permit effective work, or does it structurally prevent it?*
 

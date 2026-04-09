@@ -1,7 +1,7 @@
 ---
 title: "Master Equation"
-type: entity
-tags: [equation, foundation, multiplicative-system, v2-framework, output]
+type: concept
+tags: [equation, foundation, multiplicative-system, v2-framework, output, legacy-reference]
 sources: [raw/1.md, raw/2.md, raw/3.md, raw/4.md, raw/5.md]
 backlinks: [wiki/sources/canonical-v2-consolidated-model.md, wiki/legacy/zero-override-rule.md]
 created: 2026-04-08
@@ -61,6 +61,7 @@ The multiplicative structure is still the key insight:
 
 ## Related
 
+- [Master Equation (entity index)](../entities/master-equation.md) - how this topic is cataloged alongside other named framework objects
 - [02 - Master Equation](../concepts/02-master-equation.md) - fuller current formulation
 - [10 - Block V (Value Alignment)](../concepts/10-block-V.md) - value-side constraints
 - [11 - Block P (People System)](../concepts/11-block-P.md) - human-system constraints

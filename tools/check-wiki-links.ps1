@@ -58,15 +58,14 @@ $emptyLinks = [System.Collections.ArrayList]::new()
 $badFrontmatter = [System.Collections.ArrayList]::new()
 $conflictingTags = [System.Collections.ArrayList]::new()
 
-$yamlListPattern = '^\s*-\s*(wiki/[^\]\s`]+\.md)\s*$'
-$inlineListPattern = '\[(wiki/[^\]]+\.md)\]'
+$fmListKeys = '^(?:backlinks|superseded_by|historical_lineage)\s*:\s*\[(.*)\]\s*$'
 
 foreach ($f in $allMd) {
     $raw = Get-Content $f.FullName -Raw -ErrorAction SilentlyContinue
     if (-not $raw) { continue }
 
     foreach ($m in [regex]::Matches($raw, '\[[^\]]*\]\(\s*\)')) {
-        [void]$emptyLinks.Add("${($f.FullName)}: $($m.Value)")
+        [void]$emptyLinks.Add("$($f.FullName): $($m.Value)")
     }
 
     foreach ($m in [regex]::Matches($raw, '\[[^\]]*\]\(([^)]+)\)')) {
@@ -85,20 +84,19 @@ foreach ($f in $allMd) {
     if ($raw -match '(?s)^---\r?\n(.+?)\r?\n---') {
         $fm = $Matches[1]
         foreach ($line in $fm -split '\r?\n') {
-            if ($line -match $yamlListPattern) {
-                $p = Resolve-WikiKey $Matches[1]
-                if ($p -and -not (Test-Path -LiteralPath $p)) {
-                    [void]$badFrontmatter.Add("$($f.Name) YAML: $($Matches[1]) -> missing")
+            if ($line -match $fmListKeys) {
+                foreach ($part in ($Matches[1] -split ',')) {
+                    $t = $part.Trim()
+                    if ($t -match '^wiki/.+\.md$') {
+                        $p = Resolve-WikiKey $t
+                        if ($p -and -not (Test-Path -LiteralPath $p)) {
+                            [void]$badFrontmatter.Add("$($f.Name) YAML: $t -> missing")
+                        }
+                    }
                 }
             }
         }
-        foreach ($m in [regex]::Matches($fm, $inlineListPattern)) {
-            $p = Resolve-WikiKey $m.Groups[1].Value
-            if ($p -and -not (Test-Path -LiteralPath $p)) {
-                [void]$badFrontmatter.Add("$($f.Name) YAML: $($m.Groups[1].Value) -> missing")
-            }
-        }
-        if ($fm -match 'v2\.1-canonical' -and $fm -match 'v2-framework' -and $fm -match '^tags:') {
+        if ($fm -match 'tags:\s*\[([^\]]*)\]' -and $Matches[1] -match 'v2\.1-canonical' -and $Matches[1] -match 'v2-framework') {
             [void]$conflictingTags.Add($f.FullName)
         }
     }
@@ -114,7 +112,7 @@ Write-Host "`n=== Frontmatter wiki/*.md missing on disk: $($badFrontmatter.Count
 $badFrontmatter | Sort-Object | ForEach-Object { Write-Host $_ }
 
 Write-Host "`n=== Pages with both v2.1-canonical and v2-framework in frontmatter: $($conflictingTags.Count) ==="
-$conflictingTags | Sort-Object | ForEach-Object { Write-Host- }
+$conflictingTags | Sort-Object | ForEach-Object { Write-Host $_ }
 
 if ($broken.Count -gt 0 -or $emptyLinks.Count -gt 0 -or $badFrontmatter.Count -gt 0) {
     exit 1

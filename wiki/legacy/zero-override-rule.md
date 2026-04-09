@@ -1,4 +1,4 @@
----
+﻿---
 title: "Zero-Override Rule"
 type: concept
 tags: [rule, foundation, diagnostics, fix-order, v2-framework]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/21-zero-override.md]
 # Zero-Override Rule (Legacy)
 
 > [!WARNING]
-> This principle has been formalized into the Canonical V2.1 Architecture. See **[21 — Zero-Override Protocol]()** for the updated limits.
+> This principle has been formalized into the Canonical V2.1 Architecture. See **[21 — Zero-Override Protocol](../concepts/21-zero-override.md)** for the updated limits.
 
 ## Definition
 
@@ -25,7 +25,7 @@ Because the Master Equation is multiplicative representing an interdependent sys
 
 In the V2 framework, zeros in specific blocks represent fatal gating failures:
 1. **Zero Value ($V=0$)**: The team has perfect output, but zero strategic market fit. They are highly tuned waste producers. Continuing to fix Execution instead of Value is irrational.
-2. **Zero People Health ($P=0$)**: Burnout and zero Psychological Safety. [Fear Amplification Loop]() means all metrics they report to you are lies. Continuing to push for Quality or Focus will just cause immediate system collapse.
+2. **Zero People Health ($P=0$)**: Burnout and zero Psychological Safety. [Fear Amplification Loop](../concepts/fear-amplification-loop.md) means all metrics they report to you are lies. Continuing to push for Quality or Focus will just cause immediate system collapse.
 3. **Zero Clarity ($C=0$)**: The team is paralyzed or pulling in opposite directions.
 
 ## Operational Rule
@@ -40,5 +40,5 @@ In the [Table 2](../entities/table-2-diagnostics.md) decision tree, the zero-ove
 
 - [Master Equation](../legacy/master-equation.md) — the multiplicative structure defining the framework
 - [Fix-Order](../legacy/fix-order.md) — the default diagnostic hierarchy that this rule supersedes
-- [Losing Loop]() — the dynamic that often drives Execution conditions to zero
-- [Sustainability Drain Loop]() — the dynamic driving People conditions to zero
+- [Losing Loop](../concepts/losing-loop.md) — the dynamic that often drives Execution conditions to zero
+- [Sustainability Drain Loop](../concepts/sustainability-drain-loop.md) — the dynamic driving People conditions to zero

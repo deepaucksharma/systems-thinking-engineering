@@ -1,4 +1,4 @@
----
+﻿---
 title: "Anti-Patterns (Fallacies)"
 type: concept
 tags: [anti-pattern, executive, management, failure-mode]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/51-anti-patterns.md]
 # Anti-Patterns (Legacy)
 
 > [!WARNING]
-> This page captures the earlier visual anti-pattern map. For the canonical V2.1 reference, use **[51 — Canonical Anti-Patterns]()**.
+> This page captures the earlier visual anti-pattern map. For the canonical V2.1 reference, use **[51 — Canonical Anti-Patterns](../concepts/51-anti-patterns.md)**.
 
 ## Definition
 

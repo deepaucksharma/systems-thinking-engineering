@@ -15,6 +15,15 @@ status: active
 
 In a multiplicative formula ($OUTCOME = V \cdot P \cdot E \cdot A \cdot L$), a zero in any variable collapses the entire product to zero. The **Zero-Override Rule** states that if you encounter a "Hard Zero" in any Block, you must abandon standard diagnostic sequences (like optimizing Sprints) and fix the zero immediately to prevent total system collapse.
 
+### Hard zeros, gating, and multiple simultaneous failures
+
+[Gates](02-master-equation.md) mean prerequisites must be alive before downstream “fixes” stick. That does **not** invalidate the override; it **sequences** work when more than one block is near zero.
+
+- If **both** \(PS \approx 0\) and learning appears dead, **treat safety as the ratchet**: without honest signal, learning interventions mostly produce theater.
+- If **both** org alignment and execution are broken, **expect execution levers to relapse** until incentive and structure constraints move.
+
+**Operational reading of “fix the zero first”:** drop cosmetic sequence (sprint tweaks, vanity metrics) and **assign executive attention and policy change** to the hardest zero **that currently blocks all other progress**, using the gate order as a tie-breaker when several are bad at once—not as permission to ignore a catastrophic \(V\) or \(PS\) collapse in favor of local polish.
+
 ## The Canonical "Hard Zeros"
 
 If any of these conditions are true, treat them as a Hard Zero requiring escalation above the team layer:

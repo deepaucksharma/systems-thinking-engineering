@@ -18,7 +18,7 @@ A diagnostic and intervention framework for engineering organizations, built on 
 ## The Master Equation
 
 ```text
-Output(t) = theta * V(t) * P(t) * E(t) * A(t) * L(t) * exp(-lambda * Debt) * g(Var)
+Output(t) = theta * V(t) * P(t) * E(t) * A(t) * L(t) * exp(-lambda * Debt) * g_tail(Var)
 ```
 
 | Block | Question | Failure Pattern |
@@ -61,3 +61,4 @@ Step 4: Improve Learning only after V/P/E/A are minimally stable
 - [02 - Master Equation](02-master-equation.md) - the expanded formulation of the model.
 - [20 - Diagnostic Sequence](20-diagnostic-sequence.md) - the operational decision tree.
 - [06 - Time Constants](06-time-constants.md) - the systemic feedback window.
+- [Cynical Equilibrium](cynical-equilibrium.md) — why locally rational behavior under misaligned [Block A](13-block-A.md) incentives can lock the system in damaging equilibria; ties mechanism design to the rest of the diagnostics.

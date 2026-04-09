@@ -13,5 +13,5 @@ status: active
 
 Named models, tables, and framework components.
 
-
+- [Master Equation](../entities/master-equation.md) - entity entry; canonical math in [02](../concepts/02-master-equation.md), history in [legacy](../legacy/master-equation.md) | tags: `equation`, `entity-index` | updated: 2026-04-09
 - [Table 2 - Diagnostics](../entities/table-2-diagnostics.md) - active routing table for Value, People, Execution, Org, and Learning constraints | tags: `table`, `diagnostics`, `v2.1-canonical` | updated: 2026-04-09

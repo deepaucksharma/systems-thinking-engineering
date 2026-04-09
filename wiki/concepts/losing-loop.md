@@ -79,9 +79,17 @@ Manager interventions (Balancing Loop B1) that break the causal chain:
 2. **Protection** (hard WIP cap) — caps saturation.
 3. **Ship one complete thing** — restores focus.
 
-## V2 Context & Overrides
+## V2 / V2.1 context and overrides
 
-In Canonical V2, the Losing Loop operates strictly inside the [Block E: Execution System](12-block-E.md). However, resolving it often requires cross-layer interventions. If the Losing Loop is driven by top-down incentive pressure, it forms an [Incentive Death Spiral](incentive-death-spiral.md). If it drags down human capability permanently, it forms a [Sustainability Drain Loop](sustainability-drain-loop.md).
+In Canonical V2, the Losing Loop operates most visibly inside the [Block E: Execution System](12-block-E.md): saturation → context switching → quality loss → rework/debt → more load.
+
+In **V2.1**, treat that picture as the **execution subnet** of a larger graph ([02 — Master Equation](02-master-equation.md)):
+
+- **Block A** misalignment often **injects** workload and ambiguity (hero incentives, unclear rights, cross-team deadlock) without showing up as a local “skill” deficit.
+- **Block P** collapse **hides** early warnings—metrics stay green while overload worsens—so the loop accelerates before leadership sees it.
+- **Block L** weakness **prevents** the system from absorbing fixes; each firefight adds change debt.
+
+Cross-layer interventions still matter: incentive-driven overload forms an [Incentive Death Spiral](incentive-death-spiral.md); human-capability burn forms a [Sustainability Drain Loop](sustainability-drain-loop.md). Use [20 — Diagnostic Sequence](20-diagnostic-sequence.md) when the E-level diagram is not sufficient to locate the forcing function.
 
 ## Framework Fit and Correctness Evaluation
 

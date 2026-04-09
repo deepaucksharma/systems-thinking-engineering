@@ -1,4 +1,4 @@
----
+﻿---
 title: "Value Alignment"
 type: concept
 tags: [v2-framework, system-block, block-v, strategy]
@@ -13,7 +13,7 @@ superseded_by: [wiki/concepts/10-block-V.md]
 # Value Alignment (Block V - Legacy V2)
 
 > [!WARNING]
-> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[10 — Block V (Value Alignment)]()**.
+> This page summarizes the earlier V2 formulation. For the canonical V2.1 definition, use **[10 — Block V (Value Alignment)](../concepts/10-block-V.md)**.
 
 **Core question:** *If we executed this work perfectly, would it matter?*
 
